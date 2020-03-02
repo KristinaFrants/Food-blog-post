@@ -1,6 +1,9 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
+			people: [],
+			planets: [],
+			vehicles: [],
 			demo: [
 				{
 					title: "FIRST",
@@ -16,10 +19,42 @@ const getState = ({ getStore, getActions, setStore }) => {
 		},
 		actions: {
 			// Use getActions to call a function within a fuction
-			exampleFunction: () => {
-				getActions().changeColor(0, "green");
-			},
 			loadSomeData: () => {
+				fetch("https://swapi.co/api/people/")
+					.then(function(response) {
+						if (!response.ok) {
+							throw Error(response.statusText);
+						}
+						return response.json();
+					})
+					.then(data => setStore({ people: data.results }))
+					.catch(function(error) {
+						console.log("There was na Error: \n", error);
+					});
+
+				fetch("https://swapi.co/api/planets/")
+					.then(function(response) {
+						if (!response.ok) {
+							throw Error(response.statusText);
+						}
+						return response.json();
+					})
+					.then(data => setStore({ planets: data.results }))
+					.catch(function(error) {
+						console.log("error :\n", error);
+					});
+
+				fetch("https://swapi.co/api/vehicles/")
+					.then(function(response) {
+						if (!response.ok) {
+							throw Error(response.statusText);
+						}
+						return response.json();
+					})
+					.then(data => setStore({ vehicles: data.results }))
+					.catch(function(error) {
+						console.log("error :\n", error);
+					});
 				/**
 					fetch().then().then(data => setStore({ "foo": data.bar }))
 				*/

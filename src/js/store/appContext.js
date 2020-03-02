@@ -7,6 +7,7 @@ export const Context = React.createContext(null);
 // This function injects the global store to any view/component where you want to use it, we will inject the context to layout.js, you can see it here:
 // https://github.com/4GeeksAcademy/react-hello-webapp/blob/master/src/js/layout.js#L35
 const injectContext = PassedComponent => {
+	//parameter that we are passing Passed component
 	const StoreWrapper = props => {
 		//this will be passed as the contenxt value
 		const [state, setState] = useState(
@@ -22,6 +23,8 @@ const injectContext = PassedComponent => {
 		);
 
 		useEffect(() => {
+			state.actions.loadSomeData();
+
 			/**
 			 * EDIT THIS!
 			 * This function is the equivalent to "window.onLoad", it only runs once on the entire application lifetime
