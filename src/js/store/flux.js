@@ -4,19 +4,16 @@ const getState = ({ getStore, getActions, setStore }) => {
 			people: [],
 			planets: [],
 			vehicles: [],
-			demo: [
+			favorites: [],
+			peopleImages: [
 				{
-					title: "FIRST",
-					background: "white",
-					initial: "white"
-				},
-				{
-					title: "SECOND",
-					background: "white",
-					initial: "white"
+					name: "Luke Skywalker",
+					urlImg:
+						"https://media.gettyimages.com/photos/studio-headshot-of-actor-mark-hamill-undated-photograph-picture-id640269745?s=2048x2048"
 				}
 			]
 		},
+
 		actions: {
 			// Use getActions to call a function within a fuction
 			loadSomeData: () => {
@@ -59,6 +56,17 @@ const getState = ({ getStore, getActions, setStore }) => {
 					fetch().then().then(data => setStore({ "foo": data.bar }))
 				*/
 			},
+			toggleFavorite: person => {
+				let store = getStore();
+				let index = store.favorites.indexOf(person);
+				console.log(index);
+				if (index === -1) {
+					store.favorites.push(person);
+				} else {
+					store.favorites.splice(index, 1);
+				}
+			},
+
 			changeColor: (index, color) => {
 				//get the store
 				const store = getStore();
