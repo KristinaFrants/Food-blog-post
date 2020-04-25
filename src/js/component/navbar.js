@@ -5,7 +5,7 @@ let NavStyles = {
 	// color: "white",
 	url: "https://www.starwars.com/",
 	urlText: "text",
-	backgroundColor: "rgb(15, 15, 15, .5)",
+	backgroundColor: "black",
 	margin: "20px",
 	height: "100px",
 	color: "white"
