@@ -7,12 +7,16 @@ export const People = props => {
 	const { store, actions } = useContext(Context);
 
 	return (
-		<div className=" row ">
+		<div
+			className=" row "
+			style={{ backgroundImage: "url(https://media.giphy.com/media/TxVVB6PfWMjE4/giphy.gif)" }}>
 			<div className="block w-100">
 				<Carousely />
 			</div>
 			{/* {store.people.length > 0 && */}
-			<div className="jumbotron row w-100 mx-auto">
+			<div
+				className="jumbotron row w-100 mx-auto"
+				style={{ backgroundImage: "url(https://media.giphy.com/media/TxVVB6PfWMjE4/giphy.gif)" }}>
 				{!store.people
 					? "loading"
 					: store.people.map((person, index) => (
