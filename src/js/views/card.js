@@ -14,7 +14,7 @@ export const Card = props => {
 	console.log(store.favorites);
 
 	return (
-		<div className="text-center mt-5">
+		<div className="text-center mt-5" style={{ marginLeft: "8%" }}>
 			<div className="card" style={{ width: "18rem" }}>
 				<img src="" className="card-img-top" alt="..." />
 				<div className="card-body">

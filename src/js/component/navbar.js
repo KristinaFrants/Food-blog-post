@@ -3,20 +3,27 @@ import { Link } from "react-router-dom";
 
 let NavStyles = {
 	// color: "white",
-	url: "https://www.starwars.com/",
-	urlText: "text",
+	// url: "https://www.starwars.com/",
+	// urlText: "text",
 	backgroundColor: "black",
-	margin: "20px",
-	height: "100px",
+	// margin: "20px",
+	height: "160px",
 	color: "white"
 };
 
 let IconStyles = {
-	margin: "2px",
 	height: "35px",
-	width: "45px",
+	width: "50px",
 	color: "white",
 	marginTop: "25px"
+};
+
+let LinkStyles = {
+	margin: "2% 2% 2%",
+	textDecoration: "none",
+	padding: "10px 7px ",
+	// textDecoration: " underline dotted grey",
+	color: "white"
 };
 
 export const Navbar = () => {
@@ -39,43 +46,59 @@ export const Navbar = () => {
 	return (
 		<div className="row" style={NavStyles}>
 			<div className="col-4">
-				<a href="https://techcrunch.com/">
-					<i className="fab fa-facebook-square" style={IconStyles}>
+				<a href="">
+					<i
+						className="fab fa-facebook-square"
+						style={{
+							marginLeft: "8%",
+							height: "35px",
+							width: "50px",
+							color: "white",
+							marginTop: "25px"
+						}}>
 						{" "}
 					</i>
 				</a>
-				<a href="https://techcrunch.com/">
-					<i className="fab fa-instagram" style={IconStyles}>
+				<a href="">
+					<i style={IconStyles} className="fab fa-instagram">
 						{" "}
 					</i>
 				</a>
-				<a href="https://techcrunch.com/">
+				<a href="">
 					<i className="fab fa-github-square" style={IconStyles}>
 						{" "}
 					</i>
 				</a>
-				<a href="https://techcrunch.com/">
+				<a href="">
 					<i className="fab fa-twitter-square" style={IconStyles} />
 				</a>
 			</div>
-			<div className="col col1" />
+			<div
+				style={{
+					background:
+						"url(https://clipart.info/images/ccovers/1513370389Star%20Wars%20Logo%20transparent%20PNG.png) no-repeat center",
+					backgroundSize: "auto 100%",
+					padding: "0px"
+				}}
+				className="col col1"
+			/>
 			<div className="col col2">
 				<ul className="list-group list-group-horizontal">
-					<Link to="/people">
+					<Link style={LinkStyles} to="/people">
 						{" "}
-						<li className="list-group-item">People</li>
+						People
 					</Link>
-					<Link to="/planets">
+					<Link style={LinkStyles} to="/planets">
 						{" "}
-						<li className="list-group-item">Planets</li>
+						Planets
 					</Link>
-					<Link to="/vehicles">
+					<Link style={LinkStyles} to="/vehicles">
 						{" "}
-						<li className="list-group-item">Vehicles</li>
+						Vehicles
 					</Link>
-					<Link to="/favorites">
+					<Link style={LinkStyles} to="/favorites">
 						{" "}
-						<li className="list-group-item">favorites</li>
+						Favorites
 					</Link>
 				</ul>
 			</div>
