@@ -3,6 +3,7 @@ import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.scss";
 import { Carousel, Container } from "react-bootstrap";
 import PropTypes from "prop-types";
+import YouTube from "@u-wave/react-youtube";
 
 let JumboStyles = {
 	// borderStyle: "15px solid white",
@@ -62,11 +63,10 @@ export const Carousely = () => (
 			</Carousel.Item>
 		</Carousel>
 		<div
-			className="jumbotron"
+			className="jumbotron h-100 mb-2"
 			style={{
 				backgroundImage: "url(https://pbs.twimg.com/media/EHRv5d_UUAEMUEk?format=jpg&name=large)",
-				backgroundRepeat: "no-repeat",
-				height: "100%"
+				backgroundRepeat: "no-repeat"
 			}}>
 			<h1 className="display-4" style={{ color: "white" }}>
 				SEASON ONE
@@ -78,6 +78,21 @@ export const Carousely = () => (
 			<a className="btn btn-dark btn-lg" href="https://www.starwars.com/series/the-mandalorian" role="button">
 				Explore
 			</a>
+		</div>
+		<h2 style={{ marginTop: "2%", color: "white", marginLeft: "40%", fontFamily: "Candal" }}>Latest Video</h2>
+		<div className="row">
+			<div className="col ">
+				<YouTube
+					style={{ width: "500px", height: "300px", margin: "2% 6% 2% 8%" }}
+					video="OFlBh_eUsjA"
+					autoplay
+				/>
+				<YouTube
+					style={{ width: "500px", height: "300px", margin: "2% 2% 2% 2%" }}
+					video="6DF0X84iOwk"
+					autoplay
+				/>
+			</div>
 		</div>
 	</div>
 );

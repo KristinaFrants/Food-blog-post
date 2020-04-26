@@ -13,6 +13,9 @@ export const People = props => {
 			<div className="block w-100">
 				<Carousely />
 			</div>
+			<h2 style={{ marginTop: "2%", color: "White", marginLeft: "36%", fontFamily: "Candal" }}>
+				Discover our Heroes
+			</h2>
 			{/* {store.people.length > 0 && */}
 			<div
 				className="jumbotron row w-100 mx-auto"
@@ -23,6 +26,7 @@ export const People = props => {
 							<Card
 								key={index}
 								ind={index}
+								image={store.peopleImages[index].urlImg}
 								name={person.name}
 								hair={person.hair_color}
 								gender={person.gender}

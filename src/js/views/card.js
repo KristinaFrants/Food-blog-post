@@ -15,21 +15,26 @@ export const Card = props => {
 
 	return (
 		<div className="text-center mt-5" style={{ marginLeft: "8%" }}>
-			<div className="card" style={{ width: "18rem" }}>
-				<img src="" className="card-img-top" alt="..." />
+			<div
+				className="card"
+				style={{ width: "18rem", backgroundColor: "black", color: "white", fontFamily: "Candal" }}>
+				<img className="my-2" src={props.image} alt="test" width="100%" />
+				{/* <img src="" className="card-img-top" alt="..." /> */}
 				<div className="card-body">
 					<h5 className="card-title" />
-
-					{props.name}
+					<strong> Name : </strong> {props.name}
 					<p className="card-text">
-						{props.hair}
-						&nbsp;
-						{props.gender}
-						&nbsp;
-						{props.skin}
+						<strong> Hair Color : </strong> {props.hair}
+						<br />
+						&nbsp; <strong> Gender : </strong> {props.gender}
+						<br />
+						&nbsp; <strong> Skin : </strong> {props.skin}
+						<br />
+						{/* &nbsp; <strong> Eye Color : </strong> {props.birth_year}
+						<br /> */}
 					</p>
-					<a onClick={e => handleClick(e)} className="btn btn-primary">
-						Go somewhere
+					<a onClick={e => handleClick(e)} className="btn btn-dark " style={{ color: "white" }}>
+						Add to Favorites
 					</a>
 				</div>
 			</div>
@@ -42,5 +47,7 @@ Card.propTypes = {
 	gender: PropTypes.string,
 	hair: PropTypes.string,
 	skin: PropTypes.string,
-	data: PropTypes.object
+	data: PropTypes.object,
+	image: PropTypes.string
+	// birth_year: PropTypes.string
 };
