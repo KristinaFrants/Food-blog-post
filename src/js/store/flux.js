@@ -17,7 +17,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 		actions: {
 			// Use getActions to call a function within a fuction
 			loadSomeData: () => {
-				fetch("https://swapi.co/api/people/")
+				fetch("https://swapi.dev/api/people/")
 					.then(function(response) {
 						if (!response.ok) {
 							throw Error(response.statusText);
@@ -29,7 +29,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 						console.log("There was na Error: \n", error);
 					});
 
-				fetch("https://swapi.co/api/planets/")
+				fetch("https://swapi.dev/api/planets/")
 					.then(function(response) {
 						if (!response.ok) {
 							throw Error(response.statusText);
@@ -41,7 +41,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 						console.log("error :\n", error);
 					});
 
-				fetch("https://swapi.co/api/vehicles/")
+				fetch("https://swapi.dev/api/vehicles/")
 					.then(function(response) {
 						if (!response.ok) {
 							throw Error(response.statusText);

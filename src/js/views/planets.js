@@ -22,7 +22,7 @@ export const Planets = props => {
 									<div className="card-body">
 										<h5 className="card-title" />
 
-										{planet.name}
+										{planet.title}
 										<p className="card-text">
 											{planet.rotation_period}
 											&nbsp;
