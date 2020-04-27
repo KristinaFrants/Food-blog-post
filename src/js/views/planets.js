@@ -28,23 +28,49 @@ export const Planets = props => {
 					Explore
 				</a>
 			</div>
+			<div>
+				<hr style={{ border: "1px solid rgb(39, 39, 39)" }} />
+				<h3 style={{ color: "grey", marginLeft: "1%", fontFamily: "Candal" }}>THE CLONE WARS //</h3>
+				<hr style={{ border: "1px solid rgb(39, 39, 39" }} />
+			</div>
 			<div className="row">
 				{!store.planets
 					? "loading"
 					: store.planets.map((planet, index) => {
 							return (
-								<div key={index} ind={index} style={{ marginLeft: "8%" }} className="text-center mt-5">
+								<div
+									key={index}
+									ind={index}
+									style={{
+										marginLeft: "4%",
+										marginRight: "2%"
+									}}
+									className="text-center mt-5">
 									<div
 										className="card"
-										style={{ width: "18rem", backgroundColor: "black", marginBottom: "6%" }}>
+										style={{
+											width: "16rem",
+											backgroundColor: "rgb(39, 39, 39",
+											marginBottom: "6%"
+										}}>
 										<img
-											className="my-2"
+											className="image"
+											style={{
+												borderBottomStyle: "solid",
+												borderColor: "pink",
+												borderBottomWidth: "thin"
+											}}
 											src={store.planetImages[index].urlImg}
 											alt="test"
 											width="100%"
 										/>
 										{/* <img src="" className="card-img-top" alt="..." /> */}
-										<div className="card-body" style={{ color: "white", fontFamily: "Candal" }}>
+										<div
+											className="card-body"
+											style={{
+												color: "white",
+												fontFamily: "Candal"
+											}}>
 											<h5 className="card-title" />
 											<strong> Name : </strong> {planet.name}
 											<br />
@@ -61,7 +87,7 @@ export const Planets = props => {
 											<a
 												onClick={e => handleClick(e, index)}
 												className="btn btn-dark"
-												style={{ color: "white" }}>
+												style={{ color: "pink" }}>
 												Add to Favorites
 											</a>
 										</div>

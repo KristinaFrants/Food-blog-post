@@ -145,7 +145,27 @@ const getState = ({ getStore, getActions, setStore }) => {
 		},
 
 		actions: {
-			// Use getActions to call a function within a fuction
+			// getCorrectImage: itemObject => {
+			// 	// birth_year - person
+			// 	// climate - planet
+			// 	// crew - vehicles
+			// 	let itemType = "";
+
+			// 	if (itemObject.hasOwnProperty("crew")) {
+			// 		itemType = "vehImages";
+			// 	} else if (itemObject.hasOwnProperty("climate")) {
+			// 		itemType = "planetImages";
+			// 	} else {
+			// 		itemType = "peopleImages";
+			// 	}
+
+			// 	// look @ itemObject to see which property it contains
+			// 	let store = getStore();
+			// 	let image = store[itemType].filter(item => itemObject.name === item.name)[0].urlImg;
+			// 	return image;
+			// 	// Then, we need to loop the correct array in the store for the images
+			// },
+			// // Use getActions to call a function within a fuction
 			loadSomeData: () => {
 				fetch("https://swapi.dev/api/people/")
 					.then(function(response) {

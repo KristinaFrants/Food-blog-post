@@ -14,11 +14,26 @@ export const Card = props => {
 	console.log(store.favorites);
 
 	return (
-		<div className="text-center mt-5" style={{ marginLeft: "8%" }}>
+		<div
+			className="text-center mt-5"
+			style={{
+				marginLeft: "4%",
+				marginRight: "2%"
+			}}>
 			<div
 				className="card"
-				style={{ width: "18rem", backgroundColor: "black", color: "white", fontFamily: "Candal" }}>
-				<img className="my-2" src={props.image} alt="test" width="100%" />
+				style={{ width: "16rem", backgroundColor: "rgb(39, 39, 39)", color: "white", fontFamily: "Candal" }}>
+				<img
+					style={{
+						borderBottomStyle: "solid",
+						borderColor: "pink",
+						borderBottomWidth: "thin"
+					}}
+					className="image"
+					src={props.image}
+					alt="test"
+					width="100%"
+				/>
 				{/* <img src="" className="card-img-top" alt="..." /> */}
 				<div className="card-body">
 					<h5 className="card-title" />
@@ -33,7 +48,7 @@ export const Card = props => {
 						{/* &nbsp; <strong> Eye Color : </strong> {props.birth_year}
 						<br /> */}
 					</p>
-					<a onClick={e => handleClick(e)} className="btn btn-dark " style={{ color: "white" }}>
+					<a onClick={e => handleClick(e)} className="btn btn-dark " style={{ color: "pink" }}>
 						Add to Favorites
 					</a>
 				</div>

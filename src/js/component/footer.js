@@ -68,7 +68,7 @@ export function Footer() {
 			<Card style={{ position: "relative" }} onMouseOver={() => setOp(0.6)} onMouseLeave={() => setOp(0)}>
 				<Card.Img
 					variant="top"
-					src="https://m.buro247.sg/images/culture/star-wars-rogue-one-special-effects.jpg"
+					src="https://shawetcanada.files.wordpress.com/2016/06/stt.jpg?quality=80&strip=all&w=450&h=300&crop=1"
 				/>
 
 				<Overlay opa={op}>

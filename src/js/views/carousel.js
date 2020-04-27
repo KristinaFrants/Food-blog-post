@@ -79,11 +79,20 @@ export const Carousely = () => (
 				All Episodes now streaming only on Disney
 			</p>
 
-			<a className="btn btn-dark btn-lg" href="https://www.starwars.com/series/the-mandalorian" role="button">
+			<a
+				style={{ color: "pink" }}
+				className="btn btn-dark btn-lg"
+				href="https://www.starwars.com/series/the-mandalorian"
+				role="button">
 				Explore
 			</a>
 		</div>
-		<h2 style={{ marginTop: "2%", color: "white", marginLeft: "40%", fontFamily: "Candal" }}>Latest Video</h2>
+		<div className=" col ">
+			<hr style={{ border: "1px solid rgb(39, 39, 39)", marginTop: "3%" }} />
+			<h3 style={{ color: "grey", marginLeft: "2%", fontFamily: "Candal" }}>LATEST VIDEO //</h3>
+			<hr style={{ border: "1px solid rgb(39, 39, 39" }} />
+		</div>
+
 		<div className="row">
 			<div className="col ">
 				<YouTube

@@ -14,12 +14,14 @@ export const People = props => {
 			<div className="block w-100">
 				<Carousely />
 			</div>
-			<h2 style={{ marginTop: "2%", color: "White", marginLeft: "36%", fontFamily: "Candal" }}>
-				Discover our Heroes
-			</h2>
-			{/* {store.people.length > 0 && */}
+			<div className=" col ">
+				<hr style={{ border: "1px solid rgb(39, 39, 39" }} />
+				<h3 style={{ color: "grey", marginLeft: "2%", fontFamily: "Candal" }}>DISCOVER OUR HEROES //</h3>
+				<hr style={{ border: "1px solid rgb(39, 39, 39" }} />
+			</div>
+
 			<div
-				className="jumbotron row w-100 mx-auto"
+				className=" row w-100 mb-5"
 				style={{ backgroundImage: "url(https://media.giphy.com/media/TxVVB6PfWMjE4/giphy.gif)" }}>
 				{!store.people
 					? "loading"
