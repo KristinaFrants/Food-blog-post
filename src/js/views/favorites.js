@@ -10,13 +10,11 @@ export const Favorites = props => {
 			style={{
 				backgroundImage: "url(https://media.giphy.com/media/TxVVB6PfWMjE4/giphy.gif)"
 			}}>
-			<h3
-				style={{
-					marginLeft: "45%",
-					marginBottom: "5%"
-				}}>
-				Favorites
-			</h3>
+			<div className=" col ">
+				<hr style={{ border: "1px solid rgb(39, 39, 39)", marginTop: "3%" }} />
+				<h3 style={{ color: "grey", marginLeft: "2%", fontFamily: "Candal" }}>FAVORITES //</h3>
+				<hr style={{ border: "1px solid rgb(39, 39, 39" }} />
+			</div>
 			<div
 				className="row"
 				style={{
