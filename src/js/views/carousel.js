@@ -35,7 +35,9 @@ export const Carousely = () => (
 					alt="First slide"
 				/>
 				<Carousel.Caption style={Caption}>
-					<h1 />
+					<h1 style={{ color: "rgba(255, 255, 255, 0.61)", marginBottom: "25%", fontFamily: "Candal" }}>
+						STREAMING NOW
+					</h1>
 				</Carousel.Caption>
 			</Carousel.Item>
 			<Carousel.Item>
@@ -47,7 +49,9 @@ export const Carousely = () => (
 				/>
 
 				<Carousel.Caption style={Caption}>
-					<h3 />
+					<h3 style={{ color: "rgba(255, 255, 255, 0.61)", marginBottom: "25%", fontFamily: "Candal" }}>
+						MANDALORIAN
+					</h3>
 				</Carousel.Caption>
 			</Carousel.Item>
 			<Carousel.Item>
