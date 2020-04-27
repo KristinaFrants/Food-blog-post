@@ -33,7 +33,7 @@ export function Footer() {
 	const [opop, setOpop] = useState(0);
 	const [op, setOp] = useState(0);
 	return (
-		<CardGroup>
+		<CardGroup style={{ backgroundColor: "black" }}>
 			<Card style={{ position: "relative" }} onMouseOver={() => setOpa(0.6)} onMouseLeave={() => setOpa(0)}>
 				<Card.Img
 					variant="top"

@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import { Card } from "./card.js";
 import { Carousely } from "./carousel";
+import PropTypes from "prop-types";
 
 export const People = props => {
 	const { store, actions } = useContext(Context);
