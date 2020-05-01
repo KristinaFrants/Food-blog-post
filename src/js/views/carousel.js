@@ -7,6 +7,7 @@ import YouTube from "@u-wave/react-youtube";
 
 let JumboStyles = {
 	// borderStyle: "15px solid white",
+	height: "500px",
 	width: "100%",
 	marginLeft: "auto",
 	marginRight: "auto",
@@ -26,8 +27,9 @@ export const Carousely = () => (
 		<Carousel style={JumboStyles} className="ourfont">
 			<Carousel.Item>
 				<img
+					style={{ height: "500px" }}
 					className="d-block w-100"
-					src="https://media.giphy.com/media/SuwxpY1K29D1DKkjSF/giphy.gif
+					src="https://images.pexels.com/photos/139259/pexels-photo-139259.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
                     
                     
                    "
@@ -35,30 +37,28 @@ export const Carousely = () => (
 					alt="First slide"
 				/>
 				<Carousel.Caption style={Caption}>
-					<h1 style={{ color: "rgba(255, 255, 255, 0.61)", marginBottom: "25%", fontFamily: "Candal" }}>
-						STREAMING NOW
-					</h1>
+					<h1 style={{ color: "black", marginBottom: "25%", fontFamily: "Candal" }}>A Healthy Start</h1>
 				</Carousel.Caption>
 			</Carousel.Item>
 			<Carousel.Item>
 				<img
+					style={{ height: "500px" }}
 					className="d-block w-100"
-					src="https://media.giphy.com/media/gHiq1cvdxLohFart1u/giphy.gif
+					src=" https://images.pexels.com/photos/3429784/pexels-photo-3429784.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
                     "
 					alt="Third slide"
 				/>
 
 				<Carousel.Caption style={Caption}>
-					<h3 style={{ color: "rgba(255, 255, 255, 0.61)", marginBottom: "25%", fontFamily: "Candal" }}>
-						MANDALORIAN
-					</h3>
+					<h3 style={{ color: "Black", marginBottom: "25%", fontFamily: "Candal" }}>Clean Eating</h3>
 				</Carousel.Caption>
 			</Carousel.Item>
 			<Carousel.Item>
 				<img
+					style={{ height: "500px" }}
 					className=" d-block w-100 "
-					src="https://media.giphy.com/media/S5nUPLIh9AjFxZ7frG/giphy.gif"
-					alt="Third slide"
+					src="https://images.pexels.com/photos/2171077/pexels-photo-2171077.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940
+                   "
 				/>
 
 				<Carousel.Caption style={Caption}>

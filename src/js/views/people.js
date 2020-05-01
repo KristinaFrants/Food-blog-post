@@ -8,9 +8,7 @@ export const People = props => {
 	const { store, actions } = useContext(Context);
 
 	return (
-		<div
-			className=" row "
-			style={{ backgroundImage: "url(https://media.giphy.com/media/TxVVB6PfWMjE4/giphy.gif)" }}>
+		<div className=" row " style={{ backgroundImage: "url()" }}>
 			<div className="block w-100">
 				<Carousely />
 			</div>
@@ -20,20 +18,19 @@ export const People = props => {
 				<hr style={{ border: "1px solid rgb(39, 39, 39" }} />
 			</div>
 
-			<div
-				className=" row w-100 mb-5"
-				style={{ backgroundImage: "url(https://media.giphy.com/media/TxVVB6PfWMjE4/giphy.gif)" }}>
-				{!store.people
+			<div className=" row w-100 mb-5" style={{ backgroundImage: "url()" }}>
+				{!store.recipes
 					? "loading"
-					: store.people.map((person, index) => (
+					: store.recipes.map((recipe, index) => (
 							<Card
 								key={index}
 								ind={index}
-								image={store.peopleImages[index].urlImg}
-								name={person.name}
-								hair={person.hair_color}
-								gender={person.gender}
-								skin={person.skin_color}
+								image={recipe.thumbnail_url}
+								// {store.peopleImages[index].urlImg}
+								name={recipe.slug}
+								hair={recipe.description}
+								gender={recipe.brand}
+								skin={recipe.promotion}
 							/>
 					  ))}
 			</div>

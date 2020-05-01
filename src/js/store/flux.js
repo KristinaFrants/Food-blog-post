@@ -4,6 +4,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			people: [],
 			planets: [],
 			vehicles: [],
+			recipes: [],
 			vehImages: [
 				{
 					name: "Sand Crawler",
@@ -199,6 +200,24 @@ const getState = ({ getStore, getActions, setStore }) => {
 						return response.json();
 					})
 					.then(data => setStore({ vehicles: data.results }))
+					.catch(function(error) {
+						console.log("error :\n", error);
+					});
+
+				fetch("https://tasty.p.rapidapi.com/recipes/list?tags=under_30_minutes&from=0&sizes=20", {
+					method: "GET",
+					headers: {
+						"x-rapidapi-host": "tasty.p.rapidapi.com",
+						"x-rapidapi-key": "baeda6d0dfmsh4caffbfa08c8fe2p11d85ajsnffdca706dfc5"
+					}
+				})
+					.then(function(response) {
+						if (!response.ok) {
+							throw Error(response.statusText);
+						}
+						return response.json();
+					})
+					.then(data => setStore({ recipes: data.results }))
 					.catch(function(error) {
 						console.log("error :\n", error);
 					});
