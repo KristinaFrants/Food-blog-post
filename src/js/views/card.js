@@ -39,17 +39,17 @@ export const Card = props => {
 					<h5 className="card-title" />
 					<strong> Name : </strong> {props.name}
 					<p className="card-text">
-						<strong> Hair Color : </strong> {props.hair}
+						<strong> Country : </strong> {props.country}
 						<br />
-						&nbsp; <strong> Gender : </strong> {props.gender}
+						&nbsp; <strong> Ratio : </strong> {props.aspect_ratio}
 						<br />
-						&nbsp; <strong> Skin : </strong> {props.skin}
+						&nbsp; <strong> Tags : </strong> {props.keywords}
 						<br />
 						{/* &nbsp; <strong> Eye Color : </strong> {props.birth_year}
 						<br /> */}
 					</p>
 					<a onClick={e => handleClick(e)} className="btn btn-dark " style={{ color: "pink" }}>
-						Add to Favorites
+						Show Video
 					</a>
 				</div>
 			</div>
@@ -59,9 +59,9 @@ export const Card = props => {
 Card.propTypes = {
 	ind: PropTypes.number,
 	name: PropTypes.string,
-	gender: PropTypes.string,
-	hair: PropTypes.string,
-	skin: PropTypes.string,
+	country: PropTypes.string,
+	aspect_ratio: PropTypes.string,
+	keywords: PropTypes.string,
 	data: PropTypes.object,
 	image: PropTypes.string
 	// birth_year: PropTypes.string

@@ -5,16 +5,16 @@ let NavStyles = {
 	// color: "white",
 	// url: "https://www.starwars.com/",
 	// urlText: "text",
-	backgroundColor: "black",
+	backgroundColor: "rgba(255, 255, 255, 0)",
 	// margin: "20px",
 	height: "160px",
-	color: "white"
+	color: "black"
 };
 
 let IconStyles = {
 	height: "35px",
 	width: "50px",
-	color: "white",
+	color: "black",
 	marginTop: "25px"
 };
 
@@ -23,7 +23,7 @@ let LinkStyles = {
 	textDecoration: "none",
 	padding: "10px 7px ",
 	// textDecoration: " underline dotted grey",
-	color: "white"
+	color: "black"
 };
 
 export const Navbar = () => {
@@ -53,7 +53,7 @@ export const Navbar = () => {
 							marginLeft: "8%",
 							height: "35px",
 							width: "50px",
-							color: "white",
+							color: "black",
 							marginTop: "25px"
 						}}>
 						{" "}
@@ -76,7 +76,7 @@ export const Navbar = () => {
 			<div
 				style={{
 					background:
-						"url(https://clipart.info/images/ccovers/1513370389Star%20Wars%20Logo%20transparent%20PNG.png) no-repeat center",
+						"url(https://seeklogo.com/images/O/organic-food-logo-613EF00A48-seeklogo.com.png) no-repeat center",
 					backgroundSize: "auto 100%",
 					padding: "0px"
 				}}

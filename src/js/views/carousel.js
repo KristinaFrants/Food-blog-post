@@ -69,21 +69,19 @@ export const Carousely = () => (
 		<div
 			className="jumbotron h-100 mb-2"
 			style={{
-				backgroundImage: "url(https://pbs.twimg.com/media/EHRv5d_UUAEMUEk?format=jpg&name=large)",
+				backgroundImage:
+					"url(https://images.pexels.com/photos/1128678/pexels-photo-1128678.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)",
 				backgroundRepeat: "no-repeat"
 			}}>
-			<h1 className="display-4" style={{ color: "white" }}>
-				SEASON ONE
+			<h1 className="display-4" style={{ color: "black" }}>
+				The 10 Most Popular Recipes of April 2020
 			</h1>
-			<p className="lead" style={{ color: "white" }}>
-				All Episodes now streaming only on Disney
+			<p className="lead" style={{ color: "black" }}>
+				From comforting carbs and creamy casseroles, to recipes that repurpose leftovers and use up every last
+				bit of our sourdough starter
 			</p>
 
-			<a
-				style={{ color: "pink" }}
-				className="btn btn-dark btn-lg"
-				href="https://www.starwars.com/series/the-mandalorian"
-				role="button">
+			<a style={{ color: "pink" }} className="btn btn-dark btn-lg" href="" role="button">
 				Explore
 			</a>
 		</div>
@@ -97,12 +95,12 @@ export const Carousely = () => (
 			<div className="col ">
 				<YouTube
 					style={{ width: "500px", height: "300px", margin: "2% 6% 2% 8%" }}
-					video="OFlBh_eUsjA"
+					video="HFuE0rqBO1w"
 					autoplay
 				/>
 				<YouTube
 					style={{ width: "500px", height: "300px", margin: "2% 2% 2% 2%" }}
-					video="6DF0X84iOwk"
+					video="avVvRY6HbMw"
 					autoplay
 				/>
 			</div>
