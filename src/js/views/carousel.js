@@ -171,22 +171,31 @@ export const Carousely = () => (
 		</div> */}
 		<div className=" col ">
 			<hr style={{ border: "1px solid rgb(39, 39, 39)", marginTop: "3%" }} />
-			<h3 style={{ color: "grey", marginLeft: "2%", fontFamily: "Candal" }}>LATEST VIDEO //</h3>
+			<h3 style={{ color: "grey", marginLeft: "2%", fontFamily: "Sofia" }}>LATEST VIDEO //</h3>
 			<hr style={{ border: "1px solid rgb(39, 39, 39" }} />
 		</div>
 
-		<div className="row">
-			<div className="col ">
+		<div className="row mx-auto">
+			<div style={{ border: "2px solid black", height: "400px" }} className="col ml-4">
 				<YouTube
-					style={{ width: "500px", height: "300px", margin: "2% 6% 2% 8%" }}
+					style={{
+						width: "200px",
+						height: "200px"
+					}}
 					video="HFuE0rqBO1w"
 					autoplay
 				/>
-				<YouTube
-					style={{ width: "500px", height: "300px", margin: "2% 2% 2% 2%" }}
-					video="avVvRY6HbMw"
-					autoplay
-				/>
+			</div>
+			<div style={{ border: "2px solid black", height: "400px" }} className="col ml-2">
+				<YouTube style={{ width: "200px", height: "200px" }} video="HFuE0rqBO1w" autoplay />
+			</div>
+			<div style={{ border: "2px solid black", height: "400px" }} className="col ml-2 mr-4">
+				<YouTube style={{ width: "400px", height: "200px" }} video="avVvRY6HbMw" autoplay />
+				<h3>A Healthier Movie Night Snack Platter</h3>
+				<p>
+					You are trying to eat a little healthier after Christmas but still want something good to snack on
+					in front of a movie this weekend, right?
+				</p>
 			</div>
 		</div>
 	</div>

@@ -39,7 +39,7 @@ export const Card = props => {
 					<h5 className="card-title" />
 					<strong> Name : </strong> {props.name}
 					<p className="card-text">
-						<strong> Country : </strong> {props.country}
+						<strong> description : </strong> {props.instructions}
 						<br />
 						&nbsp; <strong> Ratio : </strong> {props.aspect_ratio}
 						<br />
@@ -52,6 +52,7 @@ export const Card = props => {
 						Show Video
 					</a>
 				</div>
+				display_text
 			</div>
 		</div>
 	);
@@ -59,6 +60,8 @@ export const Card = props => {
 Card.propTypes = {
 	ind: PropTypes.number,
 	name: PropTypes.string,
+	instructions: PropTypes.object,
+	display_text: PropTypes.string,
 	country: PropTypes.string,
 	aspect_ratio: PropTypes.string,
 	keywords: PropTypes.string,
