@@ -15,19 +15,28 @@ export const Card = props => {
 
 	return (
 		<div
-			className="text-center mt-5"
+			className=" text-center mt-5 mb-4"
 			style={{
 				marginLeft: "4%",
 				marginRight: "2%"
 			}}>
 			<div
-				className="card"
-				style={{ width: "16rem", backgroundColor: "rgb(39, 39, 39)", color: "white", fontFamily: "Candal" }}>
+				className="card "
+				style={{
+					// width: "16rem",
+					backgroundColor: "",
+					color: "black",
+					fontFamily: "Sofia"
+					// boxShadow: "0px 3px 9px 1px rgba(0, 10, 20, 0.2)"
+				}}>
 				<img
 					style={{
 						borderBottomStyle: "solid",
-						borderColor: "pink",
-						borderBottomWidth: "thin"
+						width: "300px",
+						height: "200px",
+						padding: "5px",
+						boxSizing: "border-box",
+						margin: "1% 1% 1% 1%"
 					}}
 					className="image"
 					src={props.image}
@@ -35,10 +44,15 @@ export const Card = props => {
 					width="100%"
 				/>
 				{/* <img src="" className="card-img-top" alt="..." /> */}
-				<div className="card-body">
+				<div
+					style={{
+						width: "300px",
+						height: "200px"
+					}}
+					className="card-body">
 					<h5 className="card-title" />
 					<strong> Name : </strong> {props.name}
-					<p className="card-text">
+					<p style={{ textAlign: "left" }} className="card-text">
 						{/* <strong> description : </strong> {props.description}
 						<br /> */}
 						&nbsp; <strong> Preparation time: </strong> {props.prep_time_minutes} minutes
@@ -48,11 +62,10 @@ export const Card = props => {
 						{/* &nbsp; <strong> Eye Color : </strong> {props.birth_year}
 						<br /> */}
 					</p>
-					<a onClick={e => handleClick(e)} className="btn btn-dark " style={{ color: "pink" }}>
+					<a onClick={e => handleClick(e)} className="btn btn-dark mb-6" style={{ color: "pink" }}>
 						Show Video
 					</a>
 				</div>
-				display_text
 			</div>
 		</div>
 	);
@@ -62,9 +75,6 @@ Card.propTypes = {
 	prep_time_minutes: PropTypes.number,
 	description: PropTypes.string,
 	name: PropTypes.string,
-	instructions: PropTypes.object,
-	display_text: PropTypes.string,
-	country: PropTypes.string,
 	yields: PropTypes.string,
 	data: PropTypes.object,
 	image: PropTypes.string

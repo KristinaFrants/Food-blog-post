@@ -186,11 +186,10 @@ export const Carousely = () => (
 				className="col ml-4">
 				<YouTube
 					style={{
-						width: "200px",
-						height: "200px",
-						border: "2px solid"
+						width: "400px",
+						height: "200px"
 					}}
-					video="HFuE0rqBO1w"
+					video="rGADATPA8K0"
 					autoplay
 				/>
 			</div>
@@ -203,7 +202,7 @@ export const Carousely = () => (
 					boxShadow: "0px 3px 9px 1px rgba(0, 10, 20, 0.2)"
 				}}
 				className="col ml-2">
-				<YouTube style={{ width: "200px", height: "200px" }} video="HFuE0rqBO1w" autoplay />
+				<YouTube style={{ width: "400px", height: "200px" }} video="HFuE0rqBO1w" autoplay />
 			</div>
 			<div
 				style={{
