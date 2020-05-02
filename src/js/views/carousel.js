@@ -5,6 +5,7 @@ import { Carousel, Container } from "react-bootstrap";
 import PropTypes from "prop-types";
 import YouTube from "@u-wave/react-youtube";
 import { Link } from "react-router-dom";
+import { HomeBlog } from "./homeBlog";
 
 let JumboStyles = {
 	// borderStyle: "15px solid white",
@@ -175,21 +176,44 @@ export const Carousely = () => (
 			<hr style={{ border: "1px solid rgb(39, 39, 39" }} />
 		</div>
 
-		<div className="row mx-auto">
-			<div style={{ border: "2px solid black", height: "400px" }} className="col ml-4">
+		<div style={{ backgroundColor: "#d3bec0c9" }} className="row mx-auto">
+			<div
+				style={{
+					border: "2px solid white",
+					height: "400px",
+					boxShadow: "0px 3px 9px 1px rgba(0, 10, 20, 0.2)"
+				}}
+				className="col ml-4">
 				<YouTube
 					style={{
 						width: "200px",
-						height: "200px"
+						height: "200px",
+						border: "2px solid"
 					}}
 					video="HFuE0rqBO1w"
 					autoplay
 				/>
 			</div>
-			<div style={{ border: "2px solid black", height: "400px" }} className="col ml-2">
+			<div
+				style={{
+					border: "2px solid white",
+					height: "400px",
+					border: "2px solid white",
+					height: "400px",
+					boxShadow: "0px 3px 9px 1px rgba(0, 10, 20, 0.2)"
+				}}
+				className="col ml-2">
 				<YouTube style={{ width: "200px", height: "200px" }} video="HFuE0rqBO1w" autoplay />
 			</div>
-			<div style={{ border: "2px solid black", height: "400px" }} className="col ml-2 mr-4">
+			<div
+				style={{
+					border: "2px solid white",
+					height: "400px",
+					border: "2px solid white",
+					height: "400px",
+					boxShadow: "0px 3px 9px 1px rgba(0, 10, 20, 0.2)"
+				}}
+				className="col ml-2 mr-4">
 				<YouTube style={{ width: "400px", height: "200px" }} video="avVvRY6HbMw" autoplay />
 				<h3>A Healthier Movie Night Snack Platter</h3>
 				<p>
@@ -198,5 +222,6 @@ export const Carousely = () => (
 				</p>
 			</div>
 		</div>
+		<HomeBlog />
 	</div>
 );

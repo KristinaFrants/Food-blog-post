@@ -12,6 +12,7 @@ import { Footer } from "./component/footer";
 import { People } from "./views/people";
 import { Planets } from "./views/planets";
 import { Vehicles } from "./views/vehicles";
+import { HomeBlog } from "./views/homeBlog";
 
 //create your first component
 export const Layout = () => {
@@ -26,7 +27,7 @@ export const Layout = () => {
 					<Navbar />
 					<Switch>
 						{/* <Route exact path="/" component={Card} /> */}
-						{/* <Route path="/demo" component={Demo} /> */}
+						<Route path="/homeBlog" component={HomeBlog} />
 						<Route path="/people" component={People} />
 						<Route exact path="/" component={People} />
 						<Route path="/favorites" component={Favorites} />

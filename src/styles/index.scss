@@ -1,2 +1,89 @@
 
-  
+  $boxSpacing: 23px;
+$gridSize: 200px;
+$cornerRadius: $gridSize/2.1;
+
+// https://codepen.io/abcretrograde/pen/oddaaa
+
+.card-top, .card-right, .card-bottom, .card-left {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 100%;
+//   border-radius: $cornerRadius;
+  box-shadow: 0px 3px 9px 1px rgba(185, 45, 57, 0.2);
+}
+
+
+.card-right {
+  flex-direction: row-reverse;
+  grid-column: auto / span 2;
+  grid-row: auto / span 1;
+}
+
+.card-bottom {
+  flex-direction: column-reverse;
+  grid-column: auto / span 1;
+  grid-row: auto / span 2;
+}
+
+.card-left {
+  flex-direction: row;
+  grid-column: auto / span 2;
+  grid-row: auto / span 1;
+}
+
+.card-image {
+  display: flex;
+}
+
+.card-top .card-image, .card-bottom .card-image {
+  height: 50%;
+  width: 100%;
+}
+
+.card-left .card-image, .card-right .card-image {
+  height: 100%;
+  width: 50%;
+}
+
+.card-image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.card-text {
+  align-self: center;
+  padding: $boxSpacing;
+}
+
+.card-top .card-text {
+  height: auto;
+  width: auto;
+  padding-bottom: $boxSpacing*1.6;
+}
+
+.card-right .card-text {
+  height: auto;
+  width: 50%;
+  padding-left: $boxSpacing*1.6;
+}
+
+.card-bottom .card-text {
+  height: auto;
+  width: auto;
+  padding-top: $boxSpacing*1.6;
+}
+
+.card-left .card-text {
+  height: auto;
+  width: 50%;
+  padding-right: $boxSpacing*1.6;
+}
+
+.card-text p {
+  margin: 0;
+  line-height: 1.35em;
+  color: #334455;
+}
