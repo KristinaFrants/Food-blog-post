@@ -41,10 +41,10 @@ export const Planets = props => {
 								ind={index}
 								image={recipe.thumbnail_url}
 								// {store.peopleImages[index].urlImg}
-								name={recipe.slug}
-								hair={recipe.description}
-								gender={recipe.brand}
-								skin={recipe.promotion}
+								name={recipe.name}
+								description={recipe.description}
+								prep_time_minutes={recipe.prep_time_minutes}
+								yields={recipe.yields}
 							/>
 					  ))}
 			</div>

@@ -39,11 +39,11 @@ export const Card = props => {
 					<h5 className="card-title" />
 					<strong> Name : </strong> {props.name}
 					<p className="card-text">
-						<strong> description : </strong> {props.instructions}
+						{/* <strong> description : </strong> {props.description}
+						<br /> */}
+						&nbsp; <strong> Preparation time: </strong> {props.prep_time_minutes} minutes
 						<br />
-						&nbsp; <strong> Ratio : </strong> {props.aspect_ratio}
-						<br />
-						&nbsp; <strong> Tags : </strong> {props.keywords}
+						&nbsp; <strong> {props.yields} </strong>
 						<br />
 						{/* &nbsp; <strong> Eye Color : </strong> {props.birth_year}
 						<br /> */}
@@ -59,12 +59,13 @@ export const Card = props => {
 };
 Card.propTypes = {
 	ind: PropTypes.number,
+	prep_time_minutes: PropTypes.number,
+	description: PropTypes.string,
 	name: PropTypes.string,
 	instructions: PropTypes.object,
 	display_text: PropTypes.string,
 	country: PropTypes.string,
-	aspect_ratio: PropTypes.string,
-	keywords: PropTypes.string,
+	yields: PropTypes.string,
 	data: PropTypes.object,
 	image: PropTypes.string
 	// birth_year: PropTypes.string
