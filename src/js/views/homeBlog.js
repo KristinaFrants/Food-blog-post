@@ -28,7 +28,8 @@ export const HomeBlog = props => {
 				<div
 					style={{
 						padding: "5%",
-						backgroundColor: "#d3bec0c9"
+						backgroundColor: "#d3bec0c9",
+						marginBottom: "2%"
 					}}
 					className="card-left">
 					<div className="card-image">
@@ -36,14 +37,20 @@ export const HomeBlog = props => {
 							<img src="https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=747&q=80" />
 						</FrontSide>
 					</div>
-					<div className="card-image">
+					<div className="card-image2">
 						<BackSide>
 							<img src="https://images.unsplash.com/photo-1505934558824-08367d002416?ixlib=rb-1.2.1&auto=format&fit=crop&w=732&q=80" />
 						</BackSide>
 					</div>
-					<div className="card-text">
-						<h4>Welcome to our new page! </h4>
-						<p>
+					<div
+						style={{
+							border: "2px solid rgb(175, 175, 175)",
+							height: "300px",
+							marginLeft: "2%"
+						}}
+						className="card-text">
+						<h4 style={{ textAlign: "right", marginBottom: "4%" }}>Welcome to our new page! </h4>
+						<p style={{ textAlign: "right" }}>
 							WHATS NEW? <br />
 							Hello and welcome to our new home.There is a new and totally improved recipe archive where
 							you can see preview images of all the recipes and scroll or filter the categories. A much
@@ -86,7 +93,8 @@ export const HomeBlog = props => {
 					style={{
 						padding: "7%",
 						marginTop: "3%",
-						marginLeft: "0.5%"
+						marginLeft: "0.5%",
+						backgroundColor: "#d3bec0c9"
 					}}
 					className="card-right">
 					<div className="card-image">

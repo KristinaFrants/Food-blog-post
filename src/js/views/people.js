@@ -19,7 +19,7 @@ export const People = props => {
 			</div>
 
 			<div className=" row w-100 mb-5" style={{ backgroundImage: "url()" }}>
-				{!store.recipes
+				{/* {!store.recipes
 					? "loading"
 					: store.recipes.map((recipe, index) => (
 							<Card
@@ -32,7 +32,7 @@ export const People = props => {
 								gender={recipe.brand}
 								skin={recipe.promotion}
 							/>
-					  ))}
+					  ))} */}
 			</div>
 		</div>
 	);
