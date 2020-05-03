@@ -16,19 +16,19 @@ export const Planets = props => {
 				className="jumbotron mb-2"
 				style={{
 					backgroundImage:
-						"url(https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80)",
+						"url(https://images.pexels.com/photos/4051498/pexels-photo-4051498.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)",
 					marginTop: "3%"
 				}}>
-				<h1 className="display-4" style={{ color: "white" }}>
+				<h1 className="display-4" style={{ color: "black" }}>
 					DISCOVER OUR RECIPES
 				</h1>
 				{/* <p className="lead" style={{ color: "white" }}/> */}
-				<a className="btn btn-dark btn-lg" href="" role="button">
+				{/* <a className="btn btn-dark btn-lg" href="" role="button">
 					Explore
-				</a>
+				</a> */}
 			</div>
 			<div>
-				<hr style={{ border: "1px solid rgb(39, 39, 39)" }} />
+				<hr style={{ marginTop: "3%", border: "1px solid rgb(39, 39, 39)" }} />
 				<h3 style={{ color: "grey", marginLeft: "1%", fontFamily: "Candal" }}>Recipes//</h3>
 				<hr style={{ border: "1px solid rgb(39, 39, 39" }} />
 			</div>
@@ -39,12 +39,12 @@ export const Planets = props => {
 							<Card
 								key={index}
 								ind={index}
-								image={recipe.thumbnail_url}
+								image={recipe.image}
 								// {store.peopleImages[index].urlImg}
 								name={recipe.name}
+								servings={recipe.servings}
 								description={recipe.description}
-								prep_time_minutes={recipe.prep_time_minutes}
-								yields={recipe.yields}
+								cooktime={recipe.cooktime}
 							/>
 					  ))}
 			</div>
