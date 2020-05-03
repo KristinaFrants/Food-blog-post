@@ -14,12 +14,7 @@ export const Card = props => {
 	console.log(store.favorites);
 
 	return (
-		<div
-			className=" text-center mt-5 mb-4"
-			style={{
-				marginLeft: "4%",
-				marginRight: "2%"
-			}}>
+		<div className=" text-center mt-5 mb-4 ml-4">
 			<div
 				className="card "
 				style={{
@@ -27,16 +22,15 @@ export const Card = props => {
 					backgroundColor: "",
 					color: "black",
 					fontFamily: "Sofia"
-					// boxShadow: "0px 3px 9px 1px rgba(0, 10, 20, 0.2)"
 				}}>
 				<img
 					style={{
 						borderBottomStyle: "solid",
 						width: "300px",
 						height: "200px",
-						padding: "5px",
+						padding: "7px",
 						boxSizing: "border-box",
-						margin: "1% 1% 1% 1%"
+						margin: "1% 1% 1% 2%"
 					}}
 					className="image"
 					src={props.image}
@@ -44,13 +38,24 @@ export const Card = props => {
 					width="100%"
 				/>
 				{/* <img src="" className="card-img-top" alt="..." /> */}
+				<a
+					onClick={e => handleClick(e)}
+					className="btn btn-dark "
+					style={{
+						color: "pink",
+						marginLeft: "50%",
+						width: "50%",
+						marginBottom: "2%"
+					}}>
+					Show Video
+				</a>
 				<div
 					style={{
 						width: "300px",
 						height: "200px"
 					}}
 					className="card-body">
-					<h5 className="card-title" />
+					<h5 style={{ textAlign: "left" }} className="card-title" />
 					<strong> Name : </strong> {props.name}
 					<p style={{ textAlign: "left" }} className="card-text">
 						{/* <strong> description : </strong> {props.description}
@@ -59,12 +64,7 @@ export const Card = props => {
 						<br />
 						&nbsp; <strong> {props.yields} </strong>
 						<br />
-						{/* &nbsp; <strong> Eye Color : </strong> {props.birth_year}
-						<br /> */}
-					</p>
-					<a onClick={e => handleClick(e)} className="btn btn-dark mb-6" style={{ color: "pink" }}>
-						Show Video
-					</a>
+					</p>{" "}
 				</div>
 			</div>
 		</div>
