@@ -47,12 +47,19 @@ export const HomeBlog = props => {
 				</div>
 				<div
 					style={{
-						border: "2px solid rgb(175, 175, 175)",
+						border: "2px solid white",
+						// border: "2px solid rgb(175, 175, 175)",
 						height: "300px",
 						marginLeft: "2%"
 					}}
 					className="card-text">
-					<h4 style={{ textAlign: "right", marginBottom: "4%" }}>Welcome to our new page! </h4>
+					<h4
+						style={{
+							textAlign: "right",
+							marginBottom: "4%"
+						}}>
+						Welcome to our new page!{" "}
+					</h4>
 					<p style={{ textAlign: "right" }}>
 						WHATS NEW? <br />
 						Hello and welcome to our new home.There is a new and totally improved recipe archive where you
@@ -72,10 +79,22 @@ export const HomeBlog = props => {
 				}}
 				className="card-top ">
 				<div className="card-image">
-					<img src="https://images.pexels.com/photos/1011334/pexels-photo-1011334.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" />
+					<img src="https://images.pexels.com/photos/1640770/pexels-photo-1640770.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
 				</div>
-				<div className="card-text">
-					<p>Quisque cursus, metus vitae pharetra auctor.</p>
+				<div
+					style={{
+						border: "2px solid rgb(175, 175, 175)",
+						height: "250px",
+						marginTop: "3%"
+					}}
+					className="card-text">
+					<h4>Recipes that work</h4>
+					<p>
+						There are two things we think about when deciding if a recipe is good enough to go on the site.
+						First, does it work? Does the dish make us smile inside and out? Do we want to eat the whole
+						batch by ourselves? Second, if the dish tastes great, is it worth the effort? Do we want to make
+						it again (and again and again)?
+					</p>
 				</div>
 			</div>
 			<div
@@ -85,26 +104,31 @@ export const HomeBlog = props => {
 					marginLeft: "0.5%"
 				}}
 				className="card-right">
-				<div className="card-image">
-					<img src="https://images.pexels.com/photos/35828/soap-bubble-colorful-ball-soapy-water.jpg?auto=compress&cs=tinysrgb&h=750&w=1260" />
+				<div className="card-image w-75">
+					<img src="https://images.pexels.com/photos/1927314/pexels-photo-1927314.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" />
 				</div>
-				<div className="card-text">
-					<p>Ut eu diam at pede suscipit sodales.</p>
-				</div>
-			</div>
-			<div
-				style={{
-					padding: "7%",
-					marginTop: "3%",
-					marginLeft: "0.5%",
-					backgroundColor: "#d3bec0c9"
-				}}
-				className="card-right">
-				<div className="card-image">
-					<img src="https://images.pexels.com/photos/701855/pexels-photo-701855.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" />
-				</div>
-				<div className="card-text">
-					<p>Donec lacus nunc, viverra nec, blandit vel, egestas et, augue.</p>
+				<div
+					style={{
+						border: "2px solid rgb(175, 175, 175)",
+						height: "100%",
+						margin: "1% 4% 2% 1% "
+					}}
+					className="card-text">
+					<h4 className="card-head mb-4">Recipe testing</h4>
+					<p>
+						Since we are developing recipes in our home kitchens, all of our recipes are made with the home
+						cook in mind. We want you to love our recipes as much as we do! <br /> <br />
+						Since not every home kitchen is set up the same way, as of early 2017, we now do an extra round
+						of recipe testing with a team of recipe testers who work from their home kitchens. They make and
+						give feedback on each new recipe that goes up on Simply Recipes, making sure it’s perfect before
+						it goes out the door..
+						<br /> <br /> Our eating style: we eat a mostly whole food plant based diet. Most of the recipes
+						you’ll see on this website are vegetarian or vegan, since about 90% of the time we eat that way.
+						Our eating style is most similar to the Mediterranean diet, with lots of seasonal vegetables,
+						whole grains, healthy fats, and olive oil. We’re passionate about buying local and organic where
+						possible. Above all, we avoid rules-based eating and instead embrace the joy of eating good food
+						with family and friends around the table
+					</p>
 				</div>
 			</div>
 			<div
@@ -116,30 +140,58 @@ export const HomeBlog = props => {
 				}}
 				className="card-top">
 				<div className="card-image">
-					<img src="https://images.pexels.com/photos/668295/pexels-photo-668295.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" />
+					<img src="https://images.pexels.com/photos/1640773/pexels-photo-1640773.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
 				</div>
-				<div className="card-text">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<div
+					style={{
+						border: "2px solid rgb(175, 175, 175)",
+						height: "250px",
+						marginTop: "3%"
+					}}
+					className="card-text">
+					<h4>Where we get the recipes</h4>
+					<p>
+						We develop most of our recipes in-house (Simply Recipes staff and contributors), inspired by
+						what is growing in the garden, and seasonal produce we find at the market. If we have pulled a
+						recipe from another source, we do our best to attribute the source. The recipes we share use
+						mostly whole food ingredients but we also believe there is a time and a place for healthy
+						canned, frozen, and other prepared ingredients.
+					</p>
 				</div>
 			</div>
 			<div
 				style={{
-					padding: "7%",
+					padding: "5%",
 					marginTop: "8%"
 				}}
 				className="card-bottom">
 				<div className="card-image">
-					<img src="https://images.pexels.com/photos/63238/pexels-photo-63238.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" />
+					<img src="https://images.pexels.com/photos/4038737/pexels-photo-4038737.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
 				</div>
-				<div className="card-text">
-					<p>Ut eu diam at pede suscipit sodales.</p>
+				<div
+					style={{
+						border: "2px solid rgb(175, 175, 175)",
+						marginBottom: "5%"
+					}}
+					className="card-text">
+					<h4 className="card-head mb-4"> Healthy Eating</h4>
+					<p>
+						The food you eat can affect your health and your risk for certain diseases. To eat healthier
+						food, you may need to change some of your daily habits. You also may need to change some things
+						in your environment. Your environment includes everything around you, like your home or the
+						place you work.
+						<br /> You dont need to make huge changes to eat healthier. And you dont have to change your
+						habits all at the same time. Its best to set small goals and change your habits a little bit at
+						a time. Over time, small changes can make a big difference in your health.
+					</p>
 				</div>
 			</div>
 			<div
 				style={{
 					padding: "7%",
 					marginTop: "5%",
-					marginLeft: "0.5%"
+					marginLeft: "0.5%",
+					backgroundColor: "#d3bec0c9"
 				}}
 				className="card-left">
 				<div className="card-image">
@@ -151,16 +203,32 @@ export const HomeBlog = props => {
 			</div>
 			<div
 				style={{
-					padding: "7%",
+					padding: "5%",
 					marginTop: "8%",
 					marginLeft: "2%"
 				}}
 				className="card-bottom">
 				<div className="card-image">
-					<img src="https://images.pexels.com/photos/585581/pexels-photo-585581.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" />
+					<img src="https://images.pexels.com/photos/2865987/pexels-photo-2865987.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
 				</div>
-				<div className="card-text">
-					<p>Quisque cursus, metus vitae pharetra auctor.</p>
+				<div
+					style={{
+						border: "2px solid rgb(175, 175, 175)",
+						marginBottom: "5%"
+					}}
+					className="card-text">
+					<h4 className="card-head mb-4">Changing Your Eating Habits</h4>
+					<p>
+						To eat a healthy diet, you may need to make some changes. Remember that you can change your
+						eating habits a little bit at a time. Small changes are easier to make and can lead to better
+						health.
+						<br />
+						Here are some ways to make healthy changes in your eating habits: <br />
+						Keep more fruits, low-fat dairy products (low-fat milk and low-fat yogurt), vegetables, and
+						whole-grain foods at home and at work. Focus on adding healthy food to your diet, rather than
+						just taking unhealthy foods away.
+						<br />
+					</p>
 				</div>
 			</div>
 			<div
