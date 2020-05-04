@@ -15,8 +15,6 @@ export const HomeBlog = props => {
 				gridAutoRows: "$gridSize",
 				marginTop: "4%",
 				marginBottom: "10%"
-				// gridGap: "$boxSpacing",
-				// gridTemplateColumns: "repeat(auto-fit, minmax($gridSize, $gridSize))"
 			}}
 			className="container">
 			<div
@@ -188,17 +186,46 @@ export const HomeBlog = props => {
 			</div>
 			<div
 				style={{
-					padding: "7%",
+					padding: "5%",
 					marginTop: "5%",
 					marginLeft: "0.5%",
 					backgroundColor: "#d3bec0c9"
 				}}
 				className="card-left">
 				<div className="card-image">
-					<img src="https://images.pexels.com/photos/997725/pexels-photo-997725.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" />
+					<img src="https://images.pexels.com/photos/1028598/pexels-photo-1028598.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" />
 				</div>
-				<div className="card-text">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<div
+					style={{
+						height: "100%",
+						border: "2px solid white",
+						marginLeft: "3%"
+					}}
+					className="card-text">
+					<h4 className="card-head mb-4">Healthy Eating Lifestyle</h4>
+					<p>
+						Make half your plate fruits and vegetables
+						<br />
+						Choose red, orange, and dark-green vegetables along with other vegetables for your meals. Add
+						fruit to meals as part of main or side dishes or as dessert. The more colorful you make your
+						plate, the more likely you are to get the vitamins, minerals, and fiber your body needs to be
+						healthy.
+						<br />
+						<br />
+						Make half the grains you eat whole grains
+						<br />
+						Switch from a refined-grain food to a whole-grain food. For example, choose whole-wheat bread
+						instead of white bread. Read the ingredients list and choose products that list a whole-grain
+						ingredients first. Look for things like: “whole wheat,” “brown rice,” “bulgur,” “buckwheat,”
+						“oatmeal,” “rolled oats,” quinoa,” or “wild rice.”
+						<br />
+						<br />
+						Switch to fat-free or low-fat (1%) milk
+						<br />
+						Both have the same amount of calcium and other essential nutrients as whole milk, but fewer
+						calories and less saturated fat.
+						<br />
+					</p>
 				</div>
 			</div>
 			<div
@@ -238,11 +265,23 @@ export const HomeBlog = props => {
 					marginLeft: "0.5%"
 				}}
 				className="card-right">
-				<div className="card-image">
-					<img src="https://images.pexels.com/photos/532561/pexels-photo-532561.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" />
+				<div className="card-image w-75">
+					<img src="https://images.pexels.com/photos/4032978/pexels-photo-4032978.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
 				</div>
 				<div className="card-text">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					<h4>Maintaining a Healthy Lifestyle</h4>
+					<p>
+						To maintain your healthy eating habits, try the following tips. Add More Fruits Veggies Mix
+						veggies into your go-to dishes. Swap meat for peppers and mushrooms in your tacos or try veggie
+						pasta instead of grain pasta like one made out of black beans for more plant-based protein. Use
+						fresh fruits and veggies whenever possible. Watch for sodium in canned veggies and look for
+						canned fruit packed in water instead of syrup. Pack your child’s lunch bag with fruits and
+						veggies: sliced apples, a banana or carrot sticks. Prepare Healthy Snacks Teach children the
+						difference between everyday snacks such as fruits and veggies and occasional snacks such as
+						cookies and sweets. Keep cut-up fruits and veggies like carrots, peppers, or orange slices in
+						the refrigerator. Prepare your meals for the week by making them ahead on weekends or on a day
+						off.
+					</p>
 				</div>
 			</div>
 			<div style={{ flexDirection: "column", marginTop: "14%", padding: "7%" }} className="card-top">
@@ -253,7 +292,14 @@ export const HomeBlog = props => {
 					<p>Integer lacinia sollicitudin massa. Cras metus.</p>
 				</div>
 			</div>
-			<div style={{ marginTop: "8%", padding: "7%", marginLeft: "0.5%" }} className="card-left">
+			<div
+				style={{
+					marginTop: "8%",
+					padding: "5%",
+					marginLeft: "0.5%",
+					backgroundColor: "#d3bec0c9"
+				}}
+				className="card-left">
 				<div className="card-image">
 					<img src="https://images.pexels.com/photos/262577/pexels-photo-262577.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" />
 				</div>
@@ -287,14 +333,6 @@ export const HomeBlog = props => {
 				</div>
 				<div className="card-text">
 					<p>Donec lacus nunc, viverra nec, blandit vel, egestas et, augue.</p>
-				</div>
-			</div>
-			<div style={{ marginTop: "10%", padding: "7%", marginLeft: "0.5%" }} className="card-right">
-				<div className="card-image">
-					<img src="https://images.pexels.com/photos/775907/pexels-photo-775907.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" />
-				</div>
-				<div className="card-text">
-					<p>Ut eu diam at pede suscipit sodales.</p>
 				</div>
 			</div>
 		</div>
