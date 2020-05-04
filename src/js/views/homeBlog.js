@@ -273,12 +273,14 @@ export const HomeBlog = props => {
 					<p>
 						To maintain your healthy eating habits, try the following tips. Add More Fruits Veggies Mix
 						veggies into your go-to dishes. Swap meat for peppers and mushrooms in your tacos or try veggie
-						pasta instead of grain pasta like one made out of black beans for more plant-based protein. Use
-						fresh fruits and veggies whenever possible. Watch for sodium in canned veggies and look for
-						canned fruit packed in water instead of syrup. Pack your child’s lunch bag with fruits and
+						pasta instead of grain pasta like one made out of black beans for more plant-based protein. <br/>
+                        Use fresh fruits and veggies whenever possible. Watch for sodium in canned veggies and look for
+						canned fruit packed in water instead of syrup. <br/>
+                        Pack your child’s lunch bag with fruits and
 						veggies: sliced apples, a banana or carrot sticks. Prepare Healthy Snacks Teach children the
 						difference between everyday snacks such as fruits and veggies and occasional snacks such as
-						cookies and sweets. Keep cut-up fruits and veggies like carrots, peppers, or orange slices in
+						cookies and sweets. <br/>
+                        Keep cut-up fruits and veggies like carrots, peppers, or orange slices in
 						the refrigerator. Prepare your meals for the week by making them ahead on weekends or on a day
 						off.
 					</p>
