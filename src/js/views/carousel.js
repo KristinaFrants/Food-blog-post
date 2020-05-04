@@ -7,37 +7,20 @@ import YouTube from "@u-wave/react-youtube";
 import { Link } from "react-router-dom";
 import { HomeBlog } from "./homeBlog";
 
-let JumboStyles = {
-	// borderStyle: "15px solid white",
-	height: "500px",
-	width: "100%",
-	marginLeft: "auto",
-	marginRight: "auto",
-	marginBottom: "4%",
-	borderRadius: "5px",
-	// boxShadow: " 0px 15px 30px -5px #3e4244",
-	marginTop: "2%"
-};
-
-let Caption = {
-	color: "black",
-	fontSize: "15px"
-};
-
 export const Carousely = () => (
 	<div>
 		<div
 			className="jumbotron h-100 mb-2 mt-3"
 			style={{
 				backgroundImage:
-					"url(https://images.pexels.com/photos/775033/pexels-photo-775033.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)",
+					"url(https://images.pexels.com/photos/1145976/pexels-photo-1145976.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)",
 				backgroundRepeat: "no-repeat",
 				border: "solid rgb(175, 175, 175) 2px"
 			}}>
-			<h1 className="display-4" style={{ color: "black", textAlign: "center" }}>
+			<h1 className="display-4" style={{ color: "black", textAlign: "left" }}>
 				The 10 Most Popular Recipes of April 2020
 			</h1>
-			<p className="lead" style={{ color: "black", textAlign: "center", margin: "1% 0% 1% 0% " }}>
+			<p className="lead" style={{ color: "black", margin: "1% 0% 1% 0% " }}>
 				From comforting carbs and creamy casseroles, to recipes that repurpose leftovers and use up every last
 				bit of our sourdough starter
 			</p>
@@ -109,9 +92,9 @@ export const Carousely = () => (
 			<div className="blog-slider__pagination" />
 		</div>
 		<div className=" col mb-4 ">
-			<hr style={{ border: "1px solid rgb(39, 39, 39)", marginTop: "3%" }} />
+			<hr style={{ border: "2px solid d3bec0c9", marginTop: "3%" }} />
 			<h3 style={{ color: "grey", marginLeft: "2%", fontFamily: "Sofia" }}>LATEST VIDEO //</h3>
-			<hr style={{ border: "1px solid rgb(39, 39, 39" }} />
+			<hr style={{ border: "2px solid d3bec0c9" }} />
 		</div>
 
 		<div className="row mx-auto">
@@ -119,41 +102,55 @@ export const Carousely = () => (
 				style={{
 					border: "2px solid white",
 					height: "400px",
+					width: "380px",
+					padding: "1%",
 					boxShadow: "0px 3px 9px 1px rgba(0, 10, 20, 0.2)"
 				}}
 				className="col ml-4">
 				<YouTube
 					style={{
-						width: "400px",
-						height: "200px"
+						width: "380px",
+						height: "200px",
+						marginLeft: "3%"
 					}}
 					video="rGADATPA8K0"
 					autoplay
 				/>
+				<p className="text-video p-3 mt-2">
+					Garlic Butter Shrimp is tasty, spicy, and delicious. It makes a great appetizer before dinner or to
+					serve at a party, but but can also be the perfect main dish!
+				</p>
 			</div>
 			<div
 				style={{
 					border: "2px solid white",
 					height: "400px",
+					width: "380px",
+					padding: "1%",
 					border: "2px solid white",
-					height: "400px",
 					boxShadow: "0px 3px 9px 1px rgba(0, 10, 20, 0.2)"
 				}}
 				className="col ml-2">
-				<YouTube style={{ width: "400px", height: "200px" }} video="HFuE0rqBO1w" autoplay />
+				<YouTube style={{ width: "380px", height: "200px", marginLeft: "3%" }} video="HFuE0rqBO1w" autoplay />
+				<p className="text-video p-3 mt-2">
+					Were mindful of how the current coronavirus outbreak might be affecting your access to stores and
+					general grocery items. Please know that many of these videos were filmed before the outbreak and
+					additional new videos
+				</p>
 			</div>
 			<div
 				style={{
 					border: "2px solid white",
 					height: "400px",
+					width: "380px",
+					padding: "1%",
 					border: "2px solid white",
-					height: "400px",
+
 					boxShadow: "0px 3px 9px 1px rgba(0, 10, 20, 0.2)"
 				}}
 				className="col ml-2 mr-4">
-				<YouTube style={{ width: "400px", height: "200px" }} video="avVvRY6HbMw" autoplay />
-				<h3>A Healthier Movie Night Snack Platter</h3>
-				<p>
+				<YouTube style={{ width: "380px", height: "200px", marginLeft: "3%" }} video="avVvRY6HbMw" autoplay />
+				<p className="text-video mt-2 p-3">
 					You are trying to eat a little healthier after Christmas but still want something good to snack on
 					in front of a movie this weekend, right?
 				</p>
