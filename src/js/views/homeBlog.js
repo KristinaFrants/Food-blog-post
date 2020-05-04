@@ -271,7 +271,8 @@ export const HomeBlog = props => {
 				<div
 					style={{
 						border: "2px solid rgb(175, 175, 175)",
-						marginBottom: "5%"
+						marginRight: "5%",
+						height: "100%"
 					}}
 					className="card-text">
 					<h4 className="card-head mb-4">Maintaining a Healthy Lifestyle</h4>
@@ -280,11 +281,13 @@ export const HomeBlog = props => {
 						veggies into your go-to dishes. Swap meat for peppers and mushrooms in your tacos or try veggie
 						pasta instead of grain pasta like one made out of black beans for more plant-based protein.{" "}
 						<br />
+						<br />
 						Use fresh fruits and veggies whenever possible. Watch for sodium in canned veggies and look for
 						canned fruit packed in water instead of syrup. <br />
 						Pack your child’s lunch bag with fruits and veggies: sliced apples, a banana or carrot sticks.
 						Prepare Healthy Snacks Teach children the difference between everyday snacks such as fruits and
 						veggies and occasional snacks such as cookies and sweets. <br />
+						<br />
 						Keep cut-up fruits and veggies like carrots, peppers, or orange slices in the refrigerator.
 						Prepare your meals for the week by making them ahead on weekends or on a day off.
 					</p>
@@ -292,10 +295,25 @@ export const HomeBlog = props => {
 			</div>
 			<div style={{ flexDirection: "column", marginTop: "14%", padding: "7%" }} className="card-top">
 				<div className="card-image">
-					<img src="https://images.pexels.com/photos/279376/pexels-photo-279376.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" />
+					<img src="https://images.pexels.com/photos/4050990/pexels-photo-4050990.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
 				</div>
-				<div className="card-text">
-					<p>Integer lacinia sollicitudin massa. Cras metus.</p>
+				<div
+					style={{
+						border: "2px solid rgb(175, 175, 175)",
+						marginTop: "3%"
+					}}
+					className="card-text">
+					<h4 className="card-head mb-4">Reduce Fat, Salt, and Sugar</h4>
+					<p>
+						When eating out, choose baked or grilled food instead of fried and do the same at home.
+						<br />
+						Make water your go-to drink instead of soda or sweetened beverages.
+						<br />
+						Read labels on packaged ingredients to find foods lower in sodium.
+						<br />
+						Reduce amounts of salt added to food when cooking and use herbs and spices instead to add flavor
+						like paprika, turmeric, black pepper, garlic or onion powder.
+					</p>
 				</div>
 			</div>
 			<div
@@ -307,38 +325,114 @@ export const HomeBlog = props => {
 				}}
 				className="card-left">
 				<div className="card-image">
-					<img src="https://images.pexels.com/photos/262577/pexels-photo-262577.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" />
+					<img src="https://images.pexels.com/photos/3233277/pexels-photo-3233277.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
 				</div>
-				<div className="card-text">
-					<p>Ut eu diam at pede suscipit sodales.</p>
+				<div
+					style={{
+						border: "2px solid white",
+						marginLeft: "3%",
+						height: "100%"
+					}}
+					className="card-text">
+					<h4 className="card-head mb-4">Healthy Snacking</h4>
+					<p>
+						Enjoying a healthy snack can be a great way to boost your energy, curb cravings, and prevent the
+						hangries by keeping you feeling full throughout the day.
+						<br />
+						<br />
+						Often, we may be tempted to reach for a quick snack from the vending machine or convenience
+						store. But if we give in to temptation, we’ll end up with a snack that contains added sugars and
+						empty calories. Avoid this by preparing snacks at home for the week and carrying them with you.
+						Or purchase simple, ready-made snacks to leave in your desk drawer. These strategies ensure you
+						have a smart snack at your fingertips when the time comes.
+						<br />
+						<br />
+						Preparing snacks ahead of time also helps you adhere to the serving size of your snack item and
+						avoid overeating. For example, if you are taking whole-grain crackers and the serving size is 14
+						crackers, put just that amount in a small bag or container.
+					</p>
 				</div>
 			</div>
 			<div
 				style={{ flexDirection: "column", marginTop: "14%", padding: "7%", marginLeft: "2%" }}
 				className="card-top">
 				<div className="card-image">
-					<img src="https://images.pexels.com/photos/978342/pexels-photo-978342.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" />
+					<img src="https://images.pexels.com/photos/3933207/pexels-photo-3933207.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
 				</div>
-				<div className="card-text">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				<div
+					style={{
+						border: "2px solid rgb(175, 175, 175)",
+						marginTop: "3%"
+					}}
+					className="card-text">
+					<h4>Control Portion Sizes</h4>
+					<p>
+						When preparing meals at home, use smaller plates.
+						<br />
+						Don’t clean your plate if you’re full, instead save leftovers for tomorrow’s lunch.
+						<br />
+						Portion sizes depend on the age, gender, and activity level of the individual.
+						<br />
+						Bring healthy snacks into your child’s classroom for birthday parties and holiday celebrations,
+						instead of providing sugary treats.
+						<br />
+						Pack healthy lunches for children including whole grains, fruits and veggies.
+					</p>
 				</div>
 			</div>
 			<div style={{ marginTop: "18%", padding: "7%" }} className="card-bottom">
 				<div className="card-image">
-					<img src="https://images.pexels.com/photos/305831/pexels-photo-305831.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" />
+					<img src="https://images.pexels.com/photos/1171170/pexels-photo-1171170.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
 				</div>
-				<div className="card-text">
-					<p>Quisque cursus, metus vitae pharetra auctor.</p>
+				<div
+					style={{
+						border: "2px solid rgb(175, 175, 175)",
+						marginBottom: "3%",
+						height: "100%"
+					}}
+					className="card-text">
+					<h4 className="card-head mb-4">What should you snack on?</h4>
+					<p>
+						Don’t be afraid to add variety in your snacks. Choosing a nutrient-rich and satisfying snack is
+						key. Enjoy a healthy carbohydrate and a high-protein item! Or keep things simple with pieces of
+						fruit or a hard-boiled egg. Stay away from high-fat snacks that leave you unsatisfied – like
+						fried potato chips or items with “empty calories,” such as sodas or candy bars. Here are some
+						quick, delicious snack ideas to stop the hangries and fuel your day:
+						<br />
+						Crackers and a cheese stick
+						<br />
+						Greek yogurt and sliced vegetables
+						<br />
+						Hummus and carrot chips
+					</p>
 				</div>
 			</div>
 			<div
 				style={{ flexDirection: "column", marginTop: "18%", padding: "7%", marginLeft: "2%" }}
 				className="card-top">
 				<div className="card-image">
-					<img src="https://images.pexels.com/photos/355728/pexels-photo-355728.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" />
+					<img src="https://images.pexels.com/photos/2616716/pexels-photo-2616716.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
 				</div>
-				<div className="card-text">
-					<p>Donec lacus nunc, viverra nec, blandit vel, egestas et, augue.</p>
+				<div
+					style={{
+						border: "2px solid rgb(175, 175, 175)",
+						marginTop: "3%",
+						height: "100%"
+					}}
+					className="card-text">
+					<h4 className="text-head mb-4">When should you snack?</h4>
+					<p>
+						It’s important to avoid snacking mindlessly during the day. Have a snack to tide you over until
+						your next meal or snack towards the end of the workday to boost your energy for evening errands
+						or family activities. Here are some intentional times to enjoy your snacks:
+						<br />
+						<br />
+						Before a big meeting to help you stay focused
+						<br />
+						Toward the end of your workday to fuel your evening errands and family activities before dinner
+						<br />
+						Midmorning or midafternoon when your energy starts to slump
+					</p>
 				</div>
 			</div>
 		</div>
