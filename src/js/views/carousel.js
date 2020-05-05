@@ -108,6 +108,7 @@ export const Carousely = () => (
 					}}
 					video="rGADATPA8K0"
 					autoplay
+					muted
 				/>
 				<p className="text-video p-3 mt-2">
 					Garlic Butter Shrimp is tasty, spicy, and delicious. It makes a great appetizer before dinner or to

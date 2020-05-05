@@ -26,9 +26,10 @@ export const HomeBlog = props => {
 				className="card-left">
 				<div className="pic-flip">
 					<Flippy
+						style={{ border: "" }}
 						flipOnHover={true} // default false
 						// flipOnClick={true} // default false
-						flipDirection="horizontal" // horizontal or vertical
+						flipDirection="vertical" // horizontal or vertical
 						// ref={r => flippy.toggle()}
 					>
 						<div className="card-image">
@@ -36,9 +37,22 @@ export const HomeBlog = props => {
 								<img src="https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=747&q=80" />
 							</FrontSide>
 						</div>
-						<div className="card-image2">
-							<BackSide>
-								<img src="https://images.unsplash.com/photo-1505934558824-08367d002416?ixlib=rb-1.2.1&auto=format&fit=crop&w=732&q=80" />
+						<div className="card-image2 ">
+							<BackSide
+								style={{
+									// padding: "1em",
+									border: "2px solid d3bec0c9",
+									borderRadius: "1px",
+									boxShadow: "0px 3px 9px 1px rgba(185, 45, 57, 0.2)",
+									width: "60%"
+								}}>
+								<img
+									style={{
+										width: "100%",
+										height: "98%"
+									}}
+									src="https://images.unsplash.com/photo-1505934558824-08367d002416?ixlib=rb-1.2.1&auto=format&fit=crop&w=732&q=80"
+								/>
 							</BackSide>
 						</div>
 					</Flippy>
@@ -48,7 +62,8 @@ export const HomeBlog = props => {
 						border: "2px solid white",
 						// border: "2px solid rgb(175, 175, 175)",
 						height: "300px",
-						marginLeft: "2%"
+						marginLeft: "2%",
+						width: "850px"
 					}}
 					className="card-text">
 					<h4
