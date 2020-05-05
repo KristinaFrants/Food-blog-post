@@ -10,24 +10,33 @@ import { HomeBlog } from "./homeBlog";
 export const Carousely = () => (
 	<div>
 		<div
-			className="jumbotron h-100 mb-2 mt-3"
+			className="jumbotron h-100 mb-2 mt-5"
 			style={{
 				backgroundImage:
-					"url(https://images.pexels.com/photos/1145976/pexels-photo-1145976.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)",
+					"url(https://image.freepik.com/free-photo/vegan-salad-with-avocado-white-wooden-table_23-2148305802.jpg",
 				backgroundRepeat: "no-repeat",
+				backgroundSize: "100%",
 				border: "solid rgb(175, 175, 175) 2px"
 			}}>
-			<h1 className="display-4" style={{ color: "black", textAlign: "left" }}>
-				The 10 Most Popular Recipes of April 2020
+			<h1 className="display-4" style={{ color: "grey", textAlign: "left" }}>
+				Most Popular Recipes of April 2020
 			</h1>
-			<p className="lead" style={{ color: "black", margin: "1% 0% 1% 0% " }}>
+			<br />
+			<p className="lead" style={{ color: "black", margin: "1% 0% 3% 0% " }}>
 				From comforting carbs and creamy casseroles, to recipes that repurpose leftovers and use up every last
 				bit of our sourdough starter
 			</p>
-
-			<a style={{ color: "pink", margin: "5% 5% 1% 75% " }} className="btn btn-dark btn-lg" href="" role="button">
+			<Link
+				to="/planets"
+				style={{
+					color: "grey"
+				}}>
+				{" "}
+				More Recipes
+			</Link>
+			{/* <a style={{ color: "pink", margin: "5% 5% 1% 75% " }} className="btn btn-dark btn-lg" href="" role="button">
 				Explore
-			</a>
+			</a> */}
 		</div>
 
 		<div
@@ -56,35 +65,19 @@ export const Carousely = () => (
 				/>
 			</div>
 			<div className=" col blog-slider__content">
-				<span
-					style={{
-						color: "#7b7992",
-						marginBottom: "15px",
-						display: "block",
-						fontWeight: "500"
-					}}
-					className="blog-slider__code">
-					26 December 2019
-				</span>
-				<div className="blog-slider__title">Lorem Ipsum Dolor</div>
+				<h4 className="blog-slider__title mb-3 mt-2">What does it mean to eat clean?</h4> <br />
 				<div style={{ marginBottom: "20%" }} className="blog-slider__text">
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni
-					illo ea animi?{" "}
+					The fundamentals of eating clean encourage you to consume more whole foods such as fruits,
+					vegetables, lean proteins, whole grains and healthy fats — and limit highly processed snack foods,
+					sweets and other packaged foods. Learn more about how to eat clean.
 				</div>
 				<Link
-					to="#"
+					to="/favorites"
 					style={{
-						padding: "15px 35px",
-						borderRadius: "50px",
-						color: "black",
-						textDecoration: "none",
-						fontWeight: "500",
-						justifyContent: "center",
-						letterpacing: "1px",
-						backgroundColor: "grey",
-						marginLeft: "70%"
+						color: "grey",
+						margin: "0% 0% 7% 85% "
 					}}
-					className="blog-slider__button">
+					className="blog-slider__button mr-6">
 					READ MORE
 				</Link>
 			</div>
@@ -97,7 +90,7 @@ export const Carousely = () => (
 			<hr style={{ border: "2px solid d3bec0c9" }} />
 		</div>
 
-		<div className="row mx-auto">
+		<div className="row mx-auto ">
 			<div
 				style={{
 					border: "2px solid white",

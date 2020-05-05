@@ -9,8 +9,8 @@ import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
-import { People } from "./views/people";
-import { Planets } from "./views/planets";
+import { Home } from "./views/home";
+import { Recipes } from "./views/recipes";
 import { Vehicles } from "./views/vehicles";
 import { HomeBlog } from "./views/homeBlog";
 
@@ -28,11 +28,11 @@ export const Layout = () => {
 					<Switch>
 						{/* <Route exact path="/" component={Card} /> */}
 						<Route path="/homeBlog" component={HomeBlog} />
-						<Route path="/people" component={People} />
-						<Route exact path="/" component={People} />
+						<Route path="/home" component={Home} />
+						<Route exact path="/" component={Home} />
 						<Route path="/favorites" component={Favorites} />
 						<Route path="/vehicles" component={Vehicles} />
-						<Route path="/planets" component={Planets} />
+						<Route path="/recipes" component={Recipes} />
 						<Route path="/single/:theid" component={Single} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>

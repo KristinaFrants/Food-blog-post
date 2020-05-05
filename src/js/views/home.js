@@ -4,7 +4,7 @@ import { Card } from "./card.js";
 import { Carousely } from "./carousel";
 import PropTypes from "prop-types";
 
-export const People = props => {
+export const Home = props => {
 	const { store, actions } = useContext(Context);
 
 	return (
@@ -12,12 +12,6 @@ export const People = props => {
 			<div className="block w-100">
 				<Carousely />
 			</div>
-			{/* <div className=" col ">
-				<hr style={{ border: "1px solid rgb(39, 39, 39" }} />
-				<h3 style={{ color: "grey", marginLeft: "2%", fontFamily: "Candal" }}>DISCOVER OUR HEROES //</h3>
-				<hr style={{ border: "1px solid rgb(39, 39, 39" }} />
-			</div> */}
-
 			<div className=" row w-100 mb-5" style={{ backgroundImage: "url()" }}>
 				{/* {!store.recipes
 					? "loading"

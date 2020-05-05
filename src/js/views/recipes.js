@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { Context } from "../store/appContext";
 import { Card } from "./card.js";
 
-export const Planets = props => {
+export const Recipes = props => {
 	const { store, actions } = useContext(Context);
 	const [selected, setSelected] = useState(false);
 	const handleClick = (e, ind) => {

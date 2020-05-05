@@ -8,7 +8,8 @@ let NavStyles = {
 	backgroundColor: "rgba(255, 255, 255, 0)",
 	// margin: "20px",
 	height: "160px",
-	color: "black"
+	color: "black",
+	marginTop: "1%"
 };
 
 let IconStyles = {
@@ -20,7 +21,7 @@ let IconStyles = {
 
 let LinkStyles = {
 	margin: "2% 2% 2%",
-	textDecoration: "none",
+	// textDecoration: "none",
 	padding: "10px 7px ",
 	// textDecoration: " underline dotted grey",
 	color: "black"
@@ -84,13 +85,13 @@ export const Navbar = () => {
 			/>
 			<div className="col col2">
 				<ul className="list-group list-group-horizontal">
-					<Link style={LinkStyles} to="/people">
+					<Link style={LinkStyles} to="/home">
 						{" "}
-						People
+						HOME
 					</Link>
-					<Link style={LinkStyles} to="/planets">
+					<Link style={LinkStyles} to="/recipes">
 						{" "}
-						Planets
+						RECIPES
 					</Link>
 					<Link style={LinkStyles} to="/vehicles">
 						{" "}
