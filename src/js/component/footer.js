@@ -8,9 +8,16 @@ export function Footer() {
 	return (
 		<footer className="footer-distributed">
 			<div className="footer-left">
+				<img
+					style={{
+						width: "10%",
+						height: "20%"
+					}}
+					src="https://seeklogo.com/images/O/organic-food-logo-613EF00A48-seeklogo.com.png"
+				/>
 				<h3>
-					Company
-					<span>logo</span>
+					Clean
+					<span>Eating</span>
 				</h3>
 				{/* <p className="footer-links">
 					<a href="#" className="link-1">
@@ -22,13 +29,13 @@ export function Footer() {
 					<a href="#">Faq</a>
 					<a href="#">Contact</a>
 				</p> */}
-				<p className="footer-company-name">Company Name © 2015</p>
+				<p className="footer-company-name">Clean Eating © 2020</p>
 			</div>
 			<div className="footer-center">
 				<div>
 					<i className="fa fa-map-marker" />
 					<p>
-						<span>444 S. Cedros Ave</span> Solana Beach, California
+						<span>Miami Beach</span> North Beach, Florida
 					</p>
 				</div>
 				<div>
@@ -44,22 +51,22 @@ export function Footer() {
 			</div>
 			<div className="footer-right">
 				<p className="footer-company-about">
-					<span>About the company</span>
+					<h5>About the company</h5>
 					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor
 					lacus vehicula sit amet.
 				</p>
 				<div className="footer-icons">
 					<a href="#">
-						<i className="fa fab-facebook" />
+						<i className="fab fa-facebook-f" />
 					</a>
 					<a href="#">
-						<i className="fa fab-twitter" />
+						<i className="fab fa-twitter" />
 					</a>
 					<a href="#">
-						<i className="fa fab-linkedin" />
+						<i className="fab fa-linkedin" />
 					</a>
 					<a href="#">
-						<i className="fa fab-github" />
+						<i className="fab fa-github" />
 					</a>
 				</div>
 			</div>
