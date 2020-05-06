@@ -17,7 +17,7 @@ let FormStyles = {
 	marginLeft: "6%",
 	marginBottom: "2%",
 	marginTop: "2%",
-	fontFamily: "Playfair Display, serif"
+	fontFamily: "Sofia"
 };
 
 let ImgStiles = {
@@ -35,7 +35,7 @@ let ImgStiles = {
 // 	marginLeft: "4%",
 // 	width: "80%"
 // };
-export const Vehicles = props => {
+export const AddRecipe = props => {
 	const { store, actions } = useContext(Context);
 	const [image, setImage] = useState("");
 	const [loading, setLoading] = useState(false);
@@ -232,6 +232,6 @@ export const Vehicles = props => {
 		</div>
 	);
 };
-Vehicles.propTypes = {
+AddRecipe.propTypes = {
 	history: PropTypes.object
 };

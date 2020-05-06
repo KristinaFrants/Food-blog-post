@@ -11,7 +11,7 @@ import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import { Home } from "./views/home";
 import { Recipes } from "./views/recipes";
-import { Vehicles } from "./views/vehicles";
+import { AddRecipe } from "./views/addRecipe";
 import { HomeBlog } from "./views/homeBlog";
 
 //create your first component
@@ -31,7 +31,7 @@ export const Layout = () => {
 						<Route path="/home" component={Home} />
 						<Route exact path="/" component={Home} />
 						<Route path="/favorites" component={Favorites} />
-						<Route path="/vehicles" component={Vehicles} />
+						<Route path="/addRecipe" component={AddRecipe} />
 						<Route path="/recipes" component={Recipes} />
 						<Route path="/single/:theid" component={Single} />
 						<Route render={() => <h1>Not found!</h1>} />

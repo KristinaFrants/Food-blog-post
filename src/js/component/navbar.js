@@ -75,6 +75,7 @@ export const Navbar = () => {
 				</a>
 			</div>
 			<div
+				href="/"
 				style={{
 					background:
 						"url(https://seeklogo.com/images/O/organic-food-logo-613EF00A48-seeklogo.com.png) no-repeat center",
@@ -93,9 +94,9 @@ export const Navbar = () => {
 						{" "}
 						RECIPES
 					</Link>
-					<Link style={LinkStyles} to="/vehicles">
+					<Link style={LinkStyles} to="/addRecipe">
 						{" "}
-						Vehicles
+						ADD RECIPE
 					</Link>
 					<Link style={LinkStyles} to="/favorites">
 						{" "}

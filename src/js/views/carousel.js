@@ -125,7 +125,12 @@ export const Carousely = () => (
 					boxShadow: "0px 3px 9px 1px rgba(0, 10, 20, 0.2)"
 				}}
 				className="col ml-2">
-				<YouTube style={{ width: "380px", height: "200px", marginLeft: "3%" }} video="HFuE0rqBO1w" autoplay />
+				<YouTube
+					style={{ width: "380px", height: "200px", marginLeft: "3%" }}
+					video="HFuE0rqBO1w"
+					autoplay
+					muted
+				/>
 				<p className="text-video p-3 mt-2">
 					Were mindful of how the current coronavirus outbreak might be affecting your access to stores and
 					general grocery items. Please know that many of these videos were filmed before the outbreak and
@@ -143,7 +148,12 @@ export const Carousely = () => (
 					boxShadow: "0px 3px 9px 1px rgba(0, 10, 20, 0.2)"
 				}}
 				className="col ml-2 mr-4">
-				<YouTube style={{ width: "380px", height: "200px", marginLeft: "3%" }} video="avVvRY6HbMw" autoplay />
+				<YouTube
+					style={{ width: "380px", height: "200px", marginLeft: "3%" }}
+					video="avVvRY6HbMw"
+					autoplay
+					muted
+				/>
 				<p className="text-video mt-2 p-3">
 					You are trying to eat a little healthier after Christmas but still want something good to snack on
 					in front of a movie this weekend, right?
