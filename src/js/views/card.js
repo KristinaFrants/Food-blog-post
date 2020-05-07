@@ -80,7 +80,7 @@ export const Card = props => {
 						&nbsp;
 						<strong> Servings: </strong> {props.servings}
 						<br />
-						&nbsp; <strong> Description: </strong> {props.description}
+						&nbsp; <strong> Cook Time: </strong> {props.cooktime}
 						<br />
 					</p>{" "}
 				</div>

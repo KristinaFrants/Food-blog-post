@@ -11,17 +11,17 @@ const getState = ({ getStore, getActions, setStore }) => {
 		actions: {
 			recipePost(bubu, history) {
 				console.log("buburesult", bubu);
-				fetch("https://3000-b9ebee72-9518-4668-b58e-f52291cbcc73.ws-us02.gitpod.io/recipes", {
+				fetch("https://3000-f363fa9e-f9c8-47c9-9de0-be5494889094.ws-us02.gitpod.io/recipes", {
 					method: "POST",
 					headers: { "Content-Type": "application/json" },
 					body: JSON.stringify(bubu)
 				})
 					.then(() => getActions().loadSomeData())
-					.then(() => history.push("/planets"))
+					.then(() => history.push("/recipes"))
 					.catch(e => console.error("error in add" + e));
 			},
 			deleteRecipe: (id, history) => {
-				fetch("https://3000-b9ebee72-9518-4668-b58e-f52291cbcc73.ws-us02.gitpod.io/recipes" + `${id}`, {
+				fetch("https://3000-f363fa9e-f9c8-47c9-9de0-be5494889094.ws-us02.gitpod.io/recipes" + `${id}`, {
 					method: "DELETE"
 				})
 					.then(() => {
@@ -55,7 +55,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			// },
 			// // Use getActions to call a function within a fuction
 			loadSomeData: () => {
-				fetch("https://3000-b9ebee72-9518-4668-b58e-f52291cbcc73.ws-us02.gitpod.io/recipes")
+				fetch("https://3000-f363fa9e-f9c8-47c9-9de0-be5494889094.ws-us02.gitpod.io/recipes")
 					.then(function(response) {
 						if (!response.ok) {
 							throw Error(response.statusText);
