@@ -100,7 +100,7 @@ export const Navbar = () => {
 					</Link>
 					<Link style={LinkStyles} to="/favorites">
 						{" "}
-						Favorites
+						BOOKS
 					</Link>
 				</ul>
 			</div>
