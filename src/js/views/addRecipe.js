@@ -48,7 +48,7 @@ export const AddRecipe = props => {
 		author: "",
 		email: "",
 		image: "",
-		preparation: ""
+		cooktips: ""
 		// person_id: store.contacts.id
 	});
 	console.log("props", props.history);
@@ -204,20 +204,20 @@ export const AddRecipe = props => {
 							/>
 						</Form.Group>
 					</Form>
-					{/* <Form className="row">
+					<Form className="row">
 						<Form.Group
 							style={{ marginLeft: "4%", marginRight: "-2%" }}
 							className="col"
-							controlId="formGroupEyecolor">
-							<Form.Label>Preparation</Form.Label>
+							controlId="formGroupCooktips">
+							<Form.Label>cooktips</Form.Label>
 							<Form.Control
-								type="preparation"
-								placeholder="preparation"
-								onChange={e => setAllinObject({ ...allinObject, preparation: e.target.value })}
-								value={allinObject.preparation}
+								type="cooktips"
+								placeholder="cooktips"
+								onChange={e => setAllinObject({ ...allinObject, cooktips: e.target.value })}
+								value={allinObject.cooktips}
 							/>
 						</Form.Group>
-					</Form> */}
+					</Form>
 					<Button
 						id="btnLogin"
 						className="btn btn-dark"

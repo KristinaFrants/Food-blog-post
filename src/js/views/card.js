@@ -53,7 +53,11 @@ export const Card = props => {
 					<Modal.Header closeButton>
 						<Modal.Title>{props.name}</Modal.Title>
 					</Modal.Header>
-					<Modal.Body>{props.description}</Modal.Body>
+					<Modal.Body>
+						{props.description}
+						<br />
+						{props.cooktips}
+					</Modal.Body>
 					<Modal.Footer>
 						<Button variant="secondary" onClick={handleClose}>
 							Close
@@ -80,7 +84,7 @@ export const Card = props => {
 						&nbsp;
 						<strong> Servings: </strong> {props.servings}
 						<br />
-						&nbsp; <strong> Cook Time: </strong> {props.cooktime}
+						&nbsp; <strong> Cook Tips: </strong> {props.cooktips}
 						<br />
 					</p>{" "}
 				</div>
@@ -95,6 +99,7 @@ Card.propTypes = {
 	name: PropTypes.string,
 	cooktime: PropTypes.string,
 	data: PropTypes.object,
-	image: PropTypes.string
+	image: PropTypes.string,
+	cooktips: PropTypes.string
 	// birth_year: PropTypes.string
 };

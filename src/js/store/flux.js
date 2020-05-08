@@ -1,9 +1,6 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			people: [],
-			planets: [],
-			vehicles: [],
 			recipes: [],
 			favorites: []
 		},
@@ -11,7 +8,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 		actions: {
 			recipePost(bubu, history) {
 				console.log("buburesult", bubu);
-				fetch("https://3000-f363fa9e-f9c8-47c9-9de0-be5494889094.ws-us02.gitpod.io/recipes", {
+				fetch("https://foodblogpost.herokuapp.com/recipes", {
 					method: "POST",
 					headers: { "Content-Type": "application/json" },
 					body: JSON.stringify(bubu)
@@ -21,7 +18,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					.catch(e => console.error("error in add" + e));
 			},
 			deleteRecipe: (id, history) => {
-				fetch("https://3000-f363fa9e-f9c8-47c9-9de0-be5494889094.ws-us02.gitpod.io/recipes" + `${id}`, {
+				fetch("https://foodblogpost.herokuapp.com/recipes" + `${id}`, {
 					method: "DELETE"
 				})
 					.then(() => {
@@ -55,7 +52,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			// },
 			// // Use getActions to call a function within a fuction
 			loadSomeData: () => {
-				fetch("https://3000-f363fa9e-f9c8-47c9-9de0-be5494889094.ws-us02.gitpod.io/recipes")
+				fetch("https://foodblogpost.herokuapp.com/recipes")
 					.then(function(response) {
 						if (!response.ok) {
 							throw Error(response.statusText);
