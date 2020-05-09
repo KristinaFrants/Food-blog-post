@@ -27,7 +27,7 @@ export const Carousely = () => (
 				bit of our sourdough starter
 			</p>
 			<Link
-				to="/planets"
+				to="/recipes"
 				style={{
 					color: "grey"
 				}}>
