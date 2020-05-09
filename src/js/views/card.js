@@ -84,7 +84,7 @@ export const Card = props => {
 						&nbsp;
 						<strong> Servings: </strong> {props.servings}
 						<br />
-						&nbsp; <strong> Cook Tips: </strong> {props.cooktips}
+						{/* &nbsp; <strong> Cook Tips: </strong> {props.cooktips} */}
 						<br />
 					</p>{" "}
 				</div>

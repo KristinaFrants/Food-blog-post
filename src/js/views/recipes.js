@@ -45,6 +45,7 @@ export const Recipes = props => {
 								servings={recipe.servings}
 								description={recipe.description}
 								cooktime={recipe.cooktime}
+								cooktips={recipe.cooktips}
 							/>
 					  ))}
 			</div>
