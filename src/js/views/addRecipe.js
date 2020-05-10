@@ -4,10 +4,6 @@ import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import PropTypes from "prop-types";
 
-let PawStyle = {
-	fontSize: "70px"
-};
-
 let FormStyles = {
 	// height: "80%",
 	boxShadow: " 0px 10px 30px -5px grey",
@@ -131,7 +127,7 @@ export const AddRecipe = props => {
 
 						{/* <i style={PawStyle} className="fas fa-paw col-6  pl-5 pt-3" /> */}
 					</div>
-					<Form style={{ marginRight: "4%", width: "20%", float: "left" }}>
+					<Form style={{ marginRight: "4%", width: "20%" }}>
 						<Form.Group controlId="formGroupAnimal">
 							<Form.Label>servings</Form.Label>
 							<Form.Control
@@ -145,7 +141,7 @@ export const AddRecipe = props => {
 					<Form.Group
 						style={{ float: "right", marginRight: "2%", width: "36%" }}
 						className="col"
-						controlId="formGroupAnimal">
+						controlId="formGroupCooktime">
 						<Form.Label>cooktime</Form.Label>
 						<Form.Control
 							type="cooktime"
@@ -155,14 +151,14 @@ export const AddRecipe = props => {
 						/>
 					</Form.Group>
 					<div className="row">
-						<Form className="col-md-6">
-							<Form.Group style={{ marginLeft: "6%", width: "130%" }} controlId="formGroupNickname">
-								<Form.Label>name</Form.Label>
+						<Form>
+							<Form.Group style={{ marginLeft: "2%", width: "100%" }} controlId="formGroupAuthor">
+								<Form.Label>Author</Form.Label>
 								<Form.Control
-									type="name"
-									placeholder="name"
-									onChange={e => setAllinObject({ ...allinObject, name: e.target.value })}
-									value={allinObject.name}
+									type="author"
+									placeholder="author"
+									onChange={e => setAllinObject({ ...allinObject, author: e.target.value })}
+									value={allinObject.author}
 								/>
 							</Form.Group>
 						</Form>
@@ -170,12 +166,12 @@ export const AddRecipe = props => {
 					</div>
 					<Form className="row">
 						<Form.Group style={{ marginRight: "4%" }} className="col" controlId="formGroupBreed">
-							<Form.Label>author</Form.Label>
+							<Form.Label>Recipe Name</Form.Label>
 							<Form.Control
-								type="author"
-								placeholder="Input author"
-								onChange={e => setAllinObject({ ...allinObject, author: e.target.value })}
-								value={allinObject.author}
+								type="name"
+								placeholder="Input name"
+								onChange={e => setAllinObject({ ...allinObject, name: e.target.value })}
+								value={allinObject.name}
 							/>
 						</Form.Group>
 					</Form>
@@ -192,29 +188,29 @@ export const AddRecipe = props => {
 							/>
 						</Form.Group>
 						<Form.Group
-							style={{ marginLeft: "4%", marginRight: "-2%" }}
+							style={{ marginLeft: "4%", marginRight: "2%" }}
 							className="col"
-							controlId="formGroupEyecolor">
+							controlId="formGroupCooktips">
+							<Form.Label>Cooktips</Form.Label>
+							<Form.Control
+								type="cooktips"
+								placeholder="cooktips"
+								onChange={e => setAllinObject({ ...allinObject, cooktips: e.target.value })}
+								value={allinObject.cooktips}
+							/>
+						</Form.Group>
+					</Form>
+					<Form className="row">
+						<Form.Group
+							style={{ marginLeft: "2%", marginRight: "2%" }}
+							className="col"
+							controlId="formGroupEmail">
 							<Form.Label>Email</Form.Label>
 							<Form.Control
 								type="email"
 								placeholder="email"
 								onChange={e => setAllinObject({ ...allinObject, email: e.target.value })}
 								value={allinObject.email}
-							/>
-						</Form.Group>
-					</Form>
-					<Form className="row">
-						<Form.Group
-							style={{ marginLeft: "4%", marginRight: "-2%" }}
-							className="col"
-							controlId="formGroupCooktips">
-							<Form.Label>cooktips</Form.Label>
-							<Form.Control
-								type="cooktips"
-								placeholder="cooktips"
-								onChange={e => setAllinObject({ ...allinObject, cooktips: e.target.value })}
-								value={allinObject.cooktips}
 							/>
 						</Form.Group>
 					</Form>

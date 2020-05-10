@@ -37,24 +37,22 @@ export const Card = props => {
 						height: "200px",
 						padding: "7px",
 						boxSizing: "border-box",
-						margin: "1% 1% 1% 2%"
+						margin: "1% 1% 3% %"
 					}}
 					className="image"
 					src={props.image}
-					alt="test"
+					alt="img"
 					width="100%"
 				/>
 				{/* <img src="" className="card-img-top" alt="..." /> */}
 
-				<Button variant="dark" onClick={handleShow}>
-					Show Recipe
-				</Button>
 				<Modal show={show} onHide={handleClose}>
 					<Modal.Header closeButton>
 						<Modal.Title>{props.name}</Modal.Title>
 					</Modal.Header>
 					<Modal.Body>
 						{props.description}
+						<br />
 						<br />
 						{props.cooktips}
 					</Modal.Body>
@@ -64,18 +62,19 @@ export const Card = props => {
 						</Button>
 					</Modal.Footer>
 				</Modal>
-
+				<Button style={{ width: "70%" }} variant="dark" onClick={handleShow}>
+					Show Recipe
+				</Button>
 				<div
 					style={{
 						width: "300px",
 						height: "200px"
 					}}
 					className="card-body">
-					<h5 style={{}} className="card-title" />
-					<strong> Name : </strong> {props.name}
+					<h5 style={{ textAlign: "left" }} className="card-title">
+						{props.name}{" "}
+					</h5>
 					<p style={{ textAlign: "left" }} className="card-text">
-						{/* <strong> description : </strong> {props.description}
-						<br /> */}
 						&nbsp; <strong> Preparation time: </strong> {props.cooktime} minutes
 						<br />
 						&nbsp;
