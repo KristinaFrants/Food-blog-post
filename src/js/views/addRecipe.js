@@ -127,7 +127,7 @@ export const AddRecipe = props => {
 
 						{/* <i style={PawStyle} className="fas fa-paw col-6  pl-5 pt-3" /> */}
 					</div>
-					<Form style={{ marginRight: "4%", width: "20%" }}>
+					<Form style={{ marginRight: "4%", width: "40%" }}>
 						<Form.Group controlId="formGroupAnimal">
 							<Form.Label>servings</Form.Label>
 							<Form.Control
@@ -139,7 +139,7 @@ export const AddRecipe = props => {
 						</Form.Group>
 					</Form>
 					<Form.Group
-						style={{ float: "right", marginRight: "2%", width: "36%" }}
+						style={{ float: "right", marginRight: "2%", width: "46%" }}
 						className="col"
 						controlId="formGroupCooktime">
 						<Form.Label>cooktime</Form.Label>
@@ -232,13 +232,13 @@ export const AddRecipe = props => {
 					</Button>
 				</div>
 			</div>
-
+			{/* 
 			<div className="col">
 				<img
 					src="https://images.pexels.com/photos/949067/pexels-photo-949067.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
 					style={ImgStiles}
 				/>
-			</div>
+			</div> */}
 		</div>
 	);
 };
