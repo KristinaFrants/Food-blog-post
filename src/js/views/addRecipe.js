@@ -182,6 +182,8 @@ export const AddRecipe = props => {
 							<Form.Label>ingridients</Form.Label>
 							<Form.Control
 								type="ingridients"
+								as="textarea"
+								rows="6"
 								placeholder="ingridients "
 								onChange={e => setAllinObject({ ...allinObject, ingridients: e.target.value })}
 								value={allinObject.ingridients}
@@ -194,6 +196,8 @@ export const AddRecipe = props => {
 							<Form.Label>Cooktips</Form.Label>
 							<Form.Control
 								type="cooktips"
+								as="textarea"
+								rows="6"
 								placeholder="cooktips"
 								onChange={e => setAllinObject({ ...allinObject, cooktips: e.target.value })}
 								value={allinObject.cooktips}
@@ -232,13 +236,13 @@ export const AddRecipe = props => {
 					</Button>
 				</div>
 			</div>
-			{/* 
+
 			<div className="col">
 				<img
 					src="https://images.pexels.com/photos/949067/pexels-photo-949067.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
 					style={ImgStiles}
 				/>
-			</div> */}
+			</div>
 		</div>
 	);
 };
