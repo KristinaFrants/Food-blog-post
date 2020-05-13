@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import { Card } from "./card.js";
 
-export const Favorites = props => {
+export const Books = props => {
 	const { store, actions } = useContext(Context);
 	return (
 		<div

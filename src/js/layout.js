@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
 import { Card } from "./views/card";
-import { Favorites } from "./views/favorites";
+import { Books } from "./views/books";
 import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 
@@ -30,7 +30,7 @@ export const Layout = () => {
 						<Route path="/homeBlog" component={HomeBlog} />
 						<Route path="/home" component={Home} />
 						<Route exact path="/" component={Home} />
-						<Route path="/favorites" component={Favorites} />
+						<Route path="/books" component={Books} />
 						<Route path="/addRecipe" component={AddRecipe} />
 						<Route path="/recipes" component={Recipes} />
 						<Route path="/single/:theid" component={Single} />

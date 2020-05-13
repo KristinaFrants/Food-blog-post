@@ -46,6 +46,9 @@ export const Card = props => {
 				/>
 				{/* <img src="" className="card-img-top" alt="..." /> */}
 
+				<Button style={{ width: "50%", marginTop: "3%" }} variant="dark" onClick={handleShow}>
+					Show Recipe
+				</Button>
 				<Modal show={show} onHide={handleClose}>
 					<Modal.Header closeButton>
 						<Modal.Title>{props.name}</Modal.Title>
@@ -62,9 +65,7 @@ export const Card = props => {
 						</Button>
 					</Modal.Footer>
 				</Modal>
-				<Button style={{ width: "70%" }} variant="dark" onClick={handleShow}>
-					Show Recipe
-				</Button>
+
 				<div
 					style={{
 						width: "300px",

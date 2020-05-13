@@ -98,7 +98,7 @@ export const Navbar = () => {
 						{" "}
 						ADD RECIPE
 					</Link>
-					<Link style={LinkStyles} to="/favorites">
+					<Link style={LinkStyles} to="/books">
 						{" "}
 						BOOKS
 					</Link>
