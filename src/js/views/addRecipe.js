@@ -152,7 +152,7 @@ export const AddRecipe = props => {
 					</Form.Group>
 					<div className="row">
 						<Form>
-							<Form.Group style={{ marginLeft: "2%", width: "100%" }} controlId="formGroupAuthor">
+							<Form.Group style={{ marginLeft: "2%" }} controlId="formGroupAuthor">
 								<Form.Label>Author</Form.Label>
 								<Form.Control
 									type="author"
@@ -162,10 +162,10 @@ export const AddRecipe = props => {
 								/>
 							</Form.Group>
 						</Form>
-						<Form className="col-md-6" />
+						{/* <Form className="col-md-6" /> */}
 					</div>
-					<Form className="row">
-						<Form.Group style={{ marginRight: "4%" }} className="col" controlId="formGroupBreed">
+					<Form className="col">
+						<Form.Group style={{ marginRight: "4%" }} className="recipe" controlId="formGroupBreed">
 							<Form.Label>Recipe Name</Form.Label>
 							<Form.Control
 								type="name"
