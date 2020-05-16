@@ -3,6 +3,7 @@ import { Context } from "../store/appContext";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import PropTypes from "prop-types";
+import { DraggableList } from "./dragnDrop";
 
 let FormStyles = {
 	// height: "80%",
@@ -240,10 +241,11 @@ export const AddRecipe = props => {
 			</div>
 
 			<div className="col">
-				<img
+				<DraggableList />
+				{/* <img
 					src="https://images.pexels.com/photos/949067/pexels-photo-949067.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
 					style={ImgStiles}
-				/>
+				/> */}
 			</div>
 		</div>
 	);
