@@ -280,6 +280,40 @@ section {
 }
 
 //dragnDrop
+.section {
+  background: lightblue;
+//   position: fixed;
+  overflow: hidden;
+  width: 60%;
+  height: 100%;
+  
+//   cursor: url('https://uploads.codesandbox.io/uploads/user/b3e56831-8b98-4fee-b941-0e27f39883ab/Ad1_-cursor.png') 39 39, auto;
+}
 
+.section > div {
+  position: absolute;
+//   width: 100vw;
+//   height: 100vh;
+  will-change: transform;
+//   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20%;
+  margin-top: 20%;
+}
+
+.section > div > div {
+  background-color: white;
+  background-size: auto 65%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 65vh;
+//   max-width: 300px;
+  height: 85vh;
+//   max-height: 570px;
+  will-change: transform;
+  border-radius: 2px;
+  box-shadow: 0 12.5px 100px -10px rgba(50, 50, 73, 0.4), 0 10px 10px -10px rgba(50, 50, 73, 0.3);
+}
 
 

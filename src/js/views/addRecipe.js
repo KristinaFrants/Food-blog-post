@@ -240,7 +240,7 @@ export const AddRecipe = props => {
 				</div>
 			</div>
 
-			<div className="col">
+			<div className="col section">
 				<DraggableList />
 				{/* <img
 					src="https://images.pexels.com/photos/949067/pexels-photo-949067.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
