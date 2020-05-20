@@ -3,12 +3,12 @@ import { useSprings, animated, interpolate } from "react-spring";
 import { useGesture } from "react-use-gesture";
 
 const cards = [
-	"https://upload.wikimedia.org/wikipedia/en/f/f5/RWS_Tarot_08_Strength.jpg",
-	"https://upload.wikimedia.org/wikipedia/en/5/53/RWS_Tarot_16_Tower.jpg",
-	"https://upload.wikimedia.org/wikipedia/en/9/9b/RWS_Tarot_07_Chariot.jpg",
-	"https://upload.wikimedia.org/wikipedia/en/d/db/RWS_Tarot_06_Lovers.jpg",
-	"https://upload.wikimedia.org/wikipedia/en/thumb/8/88/RWS_Tarot_02_High_Priestess.jpg/690px-RWS_Tarot_02_High_Priestess.jpg",
-	"https://upload.wikimedia.org/wikipedia/en/d/de/RWS_Tarot_01_Magician.jpg"
+	"https://image.freepik.com/free-photo/homemade-pancakes-with-berries-alarm-clock-white-wooden_127032-594.jpg",
+	"https://image.freepik.com/free-photo/doner-slices-with-green-salad-onions-white-plate_141793-1719.jpg",
+	"https://image.freepik.com/free-photo/flat-lay-fast-food-meal_23-2148273123.jpg",
+	"https://image.freepik.com/free-photo/side-view-breakfast-served-table-scrambled-eggs-with-tomatoes-with-vegetable-omelette-omelette-with-sausage-pan_141793-3862.jpg",
+	"https://image.freepik.com/free-photo/lunch-chicken-soup-with-croutons-chicken-breast-salad-wine-light-background_167180-7.jpg",
+	"https://image.freepik.com/free-photo/delicious-homemade-mushroom-cream-soup-top-view_114579-8427.jpg"
 ];
 
 // These two are just helpers, they curate spring data, values that are later being interpolated into css
