@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Context } from "../store/appContext";
 import { Card } from "./card.js";
+import { RecipeShow } from "./recipe-show";
 
 export const Recipes = props => {
 	const { store, actions } = useContext(Context);

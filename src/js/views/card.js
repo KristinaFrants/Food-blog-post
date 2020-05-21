@@ -4,6 +4,10 @@ import PropTypes from "prop-types";
 import { Context } from "../store/appContext";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
 
 export const Card = props => {
 	const [show, setShow] = useState(false);
@@ -45,19 +49,58 @@ export const Card = props => {
 					width="100%"
 				/>
 				{/* <img src="" className="card-img-top" alt="..." /> */}
-
-				<Button style={{ width: "50%", marginTop: "3%" }} variant="dark" onClick={handleShow}>
+				<Link to="/recipe-show">Recipe</Link>
+				<Button
+					id="recipeButton"
+					style={{ width: "50%", margin: "4% 0% 0% 2%" }}
+					variant="white"
+					onClick={handleShow}>
 					Show Recipe
 				</Button>
-				<Modal show={show} onHide={handleClose}>
+				<Modal
+					{...props}
+					size="lg"
+					aria-labelledby="contained-modal-title-vcenter"
+					centered
+					show={show}
+					onHide={handleClose}>
 					<Modal.Header closeButton>
 						<Modal.Title>{props.name}</Modal.Title>
 					</Modal.Header>
 					<Modal.Body>
-						{props.description}
-						<br />
-						<br />
-						{props.cooktips}
+						{/* <div className="row">
+							<div className="col-6">
+								{props.description}
+								<br />
+							</div>
+							<div className="col-6">{props.cooktips}</div>
+                        </div> */}
+
+						<Container>
+							<Row className="show-grid">
+								<Col xs={12} md={8}>
+									<p3>{props.cooktips} </p3>
+								</Col>
+								<Col xs={6} md={4}>
+									{/* <img>
+										src=
+										{props.image}
+									</img> */}
+								</Col>
+							</Row>
+
+							<Row className="show-grid">
+								<Col xs={6} md={4}>
+									<code>{props.description}</code>
+								</Col>
+								<Col xs={6} md={4}>
+									<code>.col-xs-6 .col-md-4</code>
+								</Col>
+								<Col xs={6} md={4}>
+									<code>.col-xs-6 .col-md-4</code>
+								</Col>
+							</Row>
+						</Container>
 					</Modal.Body>
 					<Modal.Footer>
 						<Button variant="secondary" onClick={handleClose}>

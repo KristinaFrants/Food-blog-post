@@ -13,6 +13,7 @@ import { Home } from "./views/home";
 import { Recipes } from "./views/recipes";
 import { AddRecipe } from "./views/addRecipe";
 import { HomeBlog } from "./views/homeBlog";
+import { RecipeContent } from "./views/showSelectedRecipe";
 import { DraggableList } from "./views/dragnDrop";
 
 //create your first component
@@ -32,6 +33,7 @@ export const Layout = () => {
 						<Route path="/home" component={Home} />
 						<Route exact path="/" component={Home} />
 						<Route path="/books" component={Books} />
+						<Route path="/showSelectedRecipe" component={RecipeContent} />
 						<Route path="/addRecipe" component={AddRecipe} />
 						<Route path="/dragnDrop" component={DraggableList} />
 						<Route path="/recipes" component={Recipes} />

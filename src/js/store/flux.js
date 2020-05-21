@@ -30,27 +30,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 						console.log("There was an Error : \n", error);
 					});
 			},
-			// getCorrectImage: itemObject => {
-			// 	// birth_year - person
-			// 	// climate - planet
-			// 	// crew - vehicles
-			// 	let itemType = "";
 
-			// 	if (itemObject.hasOwnProperty("crew")) {
-			// 		itemType = "vehImages";
-			// 	} else if (itemObject.hasOwnProperty("climate")) {
-			// 		itemType = "planetImages";
-			// 	} else {
-			// 		itemType = "peopleImages";
-			// 	}
-
-			// 	// look @ itemObject to see which property it contains
-			// 	let store = getStore();
-			// 	let image = store[itemType].filter(item => itemObject.name === item.name)[0].urlImg;
-			// 	return image;
-			// 	// Then, we need to loop the correct array in the store for the images
-			// },
-			// // Use getActions to call a function within a fuction
 			loadSomeData: () => {
 				fetch("https://foodblogpost.herokuapp.com/recipes")
 					.then(function(response) {
@@ -68,16 +48,16 @@ const getState = ({ getStore, getActions, setStore }) => {
 				*/
 			},
 
-			toggleFavorite: person => {
-				let store = getStore();
-				let index = store.favorites.indexOf(person);
-				console.log(index);
-				if (index === -1) {
-					store.favorites.push(person);
-				} else {
-					store.favorites.splice(index, 1);
-				}
-			},
+			// toggleFavorite: person => {
+			// 	let store = getStore();
+			// 	let index = store.favorites.indexOf(person);
+			// 	console.log(index);
+			// 	if (index === -1) {
+			// 		store.favorites.push(person);
+			// 	} else {
+			// 		store.favorites.splice(index, 1);
+			// 	}
+			// },
 
 			changeColor: (index, color) => {
 				//get the store
