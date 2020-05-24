@@ -82,6 +82,7 @@ export const Card = props => {
 									<p3>{props.cooktips} </p3>
 								</Col>
 								<Col xs={6} md={4}>
+									<p3>{props.cooktime} </p3>
 									{/* <img>
 										src=
 										{props.image}
