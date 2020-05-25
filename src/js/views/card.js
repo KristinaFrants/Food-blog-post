@@ -68,14 +68,6 @@ export const Card = props => {
 						<Modal.Title>{props.name}</Modal.Title>
 					</Modal.Header>
 					<Modal.Body>
-						{/* <div className="row">
-							<div className="col-6">
-								{props.description}
-								<br />
-							</div>
-							<div className="col-6">{props.cooktips}</div>
-                        </div> */}
-
 						<Container>
 							<h3>Cooking Tips</h3>
 							<Row className="show-grid">
@@ -135,7 +127,6 @@ export const Card = props => {
 						&nbsp;
 						<strong> Servings: </strong> {props.servings}
 						<br />
-						{/* &nbsp; <strong> Cook Tips: </strong> {props.cooktips} */}
 						<br />
 					</p>{" "}
 				</div>
