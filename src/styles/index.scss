@@ -281,7 +281,7 @@ section {
 
 //dragnDrop
 .section {
-  background: lightblue;
+//   background: lightblue;
 //   position: fixed;
   overflow: hidden;
   width: 60%;
@@ -299,11 +299,11 @@ section {
   align-items: center;
   justify-content: center;
   margin-left: 20%;
-  margin-top: 20%;
+  margin-top: 25%;
 }
 
 .section > div > div {
-  background-color: white;
+  background-color: whitesmoke;
   background-size: auto 65%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -319,5 +319,10 @@ section {
 
 #recipeButton:hover{
     background-color: yellow;
+
+}
+
+#btnLogin:hover{
+    background-color: rgb(175, 175, 55);
 
 }

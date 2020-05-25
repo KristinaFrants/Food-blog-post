@@ -122,7 +122,7 @@ export const Card = props => {
 						{props.name}{" "}
 					</h5>
 					<p style={{ textAlign: "left" }} className="card-text">
-						&nbsp; <strong> Preparation time: </strong> {props.cooktime} minutes
+						&nbsp; <strong> Preparation time: </strong> {props.cooktime}
 						<br />
 						&nbsp;
 						<strong> Servings: </strong> {props.servings}
