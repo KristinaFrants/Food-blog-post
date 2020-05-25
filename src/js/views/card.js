@@ -92,15 +92,16 @@ export const Card = props => {
 							<h3 style={{ fontStyle: "italic" }}>Description</h3>
 							<Row className="show-grid">
 								{/* <Col xs={} md={}> */}
-								<Col>
+								<Col xs={6} md={6}>
 									<p>{props.description}</p>
 								</Col>
 								{/* <Col xs={6} md={4}>
 									<code>.col-xs-6 .col-md-4</code>
 								</Col> */}
-								{/* <Col xs={6} md={6}>
-									<p3>{props.cooktime} </p3>
-								</Col> */}
+								<Col xs={6} md={6}>
+									<h3 style={{ fontStyle: "italic" }}>Ingridients</h3>
+									<p3>{props.ingridients} </p3>
+								</Col>
 							</Row>
 							<p style={{ fontStyle: "italic" }}>Bon Appetit!</p>
 						</Container>
@@ -137,6 +138,7 @@ export const Card = props => {
 Card.propTypes = {
 	ind: PropTypes.number,
 	servings: PropTypes.string,
+	ingridients: PropTypes.string,
 	description: PropTypes.string,
 	name: PropTypes.string,
 	cooktime: PropTypes.string,
