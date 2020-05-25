@@ -65,11 +65,11 @@ export const Card = props => {
 					show={show}
 					onHide={handleClose}>
 					<Modal.Header closeButton>
-						<Modal.Title>{props.name}</Modal.Title>
+						<Modal.Title style={{ fontStyle: "italic" }}>{props.name}</Modal.Title>
 					</Modal.Header>
 					<Modal.Body>
 						<Container>
-							<h3>Cooking Tips</h3>
+							<h3 style={{ fontStyle: "italic" }}>Cooking Tips</h3>
 							<Row className="show-grid">
 								<Col xs={12} md={8}>
 									<p3>{props.cooktips} </p3>
@@ -77,10 +77,10 @@ export const Card = props => {
 								<Col xs={6} md={4}>
 									<img
 										style={{
-											borderStyle: "solid, grey",
+											borderStyle: "solid, grey, 2px",
 											width: "200px",
 											height: "200px",
-											padding: "7px",
+											// padding: "7px",
 											boxSizing: "border-box",
 											margin: "1% 1% 3% %"
 										}}
@@ -89,7 +89,7 @@ export const Card = props => {
 								</Col>
 							</Row>
 							<br />
-							<h3>Description</h3>
+							<h3 style={{ fontStyle: "italic" }}>Description</h3>
 							<Row className="show-grid">
 								{/* <Col xs={} md={}> */}
 								<Col>

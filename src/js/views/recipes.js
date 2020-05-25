@@ -17,8 +17,10 @@ export const Recipes = props => {
 				className="jumbotron mb-2"
 				style={{
 					backgroundImage:
-						"url(https://images.pexels.com/photos/4051498/pexels-photo-4051498.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)",
-					marginTop: "3%"
+						"url(https://res.cloudinary.com/div5hqtbd/image/upload/v1590437028/foodpic_abi0y4.png)",
+					marginTop: "3%",
+					backgroundRepeat: "no-repeat",
+					backgroundSize: "100%"
 				}}>
 				<h1 className="display-4" style={{ color: "black" }}>
 					DISCOVER OUR RECIPES

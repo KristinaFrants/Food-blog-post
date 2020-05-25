@@ -13,23 +13,24 @@ export const Carousely = () => (
 			className="jumbotron h-100 mb-2 mt-5"
 			style={{
 				backgroundImage:
-					"url(https://image.freepik.com/free-photo/vegan-salad-with-avocado-white-wooden-table_23-2148305802.jpg",
+					"url(https://res.cloudinary.com/div5hqtbd/image/upload/v1590436722/Pink_Brush_Strokes_Beauty_Cosmetics_Facebook_Cover_1_ujqwag.png",
 				backgroundRepeat: "no-repeat",
 				backgroundSize: "100%",
 				border: "solid rgb(175, 175, 175) 2px"
 			}}>
-			<h1 className="display-4" style={{ color: "grey", textAlign: "left" }}>
-				Most Popular Recipes of April 2020
+			<h1 className="display-4" style={{ color: "black", textAlign: "left" }}>
+				Most Popular Recipes of June 2020
 			</h1>
 			<br />
-			<p className="lead" style={{ color: "black", margin: "1% 0% 3% 0% " }}>
+			{/* <p className="lead" style={{ color: "black", margin: "1% 0% 3% 0% " }}>
 				From comforting carbs and creamy casseroles, to recipes that repurpose leftovers and use up every last
 				bit of our sourdough starter
-			</p>
+			</p> */}
 			<Link
 				to="/recipes"
 				style={{
-					color: "grey"
+					color: "black",
+					marginLeft: "1%"
 				}}>
 				{" "}
 				More Recipes
