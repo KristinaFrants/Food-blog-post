@@ -37,11 +37,11 @@ export const Card = props => {
 				<img
 					style={{
 						borderBottomStyle: "solid",
-						width: "300px",
+						width: "250px",
 						height: "200px",
 						padding: "7px",
 						boxSizing: "border-box",
-						margin: "1% 1% 3% %"
+						margin: "2% 1% 2% 7%"
 					}}
 					className="image"
 					src={props.image}
@@ -49,10 +49,10 @@ export const Card = props => {
 					width="100%"
 				/>
 				{/* <img src="" className="card-img-top" alt="..." /> */}
-				<Link to="/recipe-show">Recipe</Link>
+				{/* <Link to="/recipe-show">Recipe</Link> */}
 				<Button
 					id="recipeButton"
-					style={{ width: "50%", margin: "4% 0% 0% 2%" }}
+					style={{ width: "50%", margin: "2% 0% 0% 20%" }}
 					variant="white"
 					onClick={handleShow}>
 					Show Recipe
@@ -83,26 +83,34 @@ export const Card = props => {
 									<p3>{props.cooktips} </p3>
 								</Col>
 								<Col xs={6} md={4}>
-									<p3>{props.cooktime} </p3>
-									{/* <img>
-										src=
-										{props.image}
-									</img> */}
+									<img
+										style={{
+											borderStyle: "solid, grey",
+											width: "200px",
+											height: "200px",
+											padding: "7px",
+											boxSizing: "border-box",
+											margin: "1% 1% 3% %"
+										}}
+										src={props.image}
+									/>
 								</Col>
 							</Row>
 							<br />
 							<h3>Description</h3>
 							<Row className="show-grid">
-								<Col xs={6} md={6}>
+								{/* <Col xs={} md={}> */}
+								<Col>
 									<p>{props.description}</p>
 								</Col>
 								{/* <Col xs={6} md={4}>
 									<code>.col-xs-6 .col-md-4</code>
 								</Col> */}
-								<Col xs={6} md={6}>
-									<code>.col-xs-6 .col-md-4</code>
-								</Col>
+								{/* <Col xs={6} md={6}>
+									<p3>{props.cooktime} </p3>
+								</Col> */}
 							</Row>
+							<p style={{ fontStyle: "italic" }}>Bon Appetit!</p>
 						</Container>
 					</Modal.Body>
 					<Modal.Footer>
