@@ -77,6 +77,7 @@ export const Card = props => {
                         </div> */}
 
 						<Container>
+							<h3>Cooking Tips</h3>
 							<Row className="show-grid">
 								<Col xs={12} md={8}>
 									<p3>{props.cooktips} </p3>
@@ -89,15 +90,16 @@ export const Card = props => {
 									</img> */}
 								</Col>
 							</Row>
-
+							<br />
+							<h3>Description</h3>
 							<Row className="show-grid">
-								<Col xs={6} md={4}>
-									<code>{props.description}</code>
+								<Col xs={6} md={6}>
+									<p>{props.description}</p>
 								</Col>
-								<Col xs={6} md={4}>
+								{/* <Col xs={6} md={4}>
 									<code>.col-xs-6 .col-md-4</code>
-								</Col>
-								<Col xs={6} md={4}>
+								</Col> */}
+								<Col xs={6} md={6}>
 									<code>.col-xs-6 .col-md-4</code>
 								</Col>
 							</Row>
