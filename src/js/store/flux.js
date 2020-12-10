@@ -1,8 +1,14 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			recipes: [],
-			favorites: []
+			recipes: [
+				{
+					description: "FIRST",
+					background: "white",
+					initial: "white"
+				}
+			],
+			singleRecipe: []
 		},
 
 		actions: {

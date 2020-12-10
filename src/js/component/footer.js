@@ -2,72 +2,83 @@ import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
 import styled, { keyframes } from "styled-components";
-// import { url } from "inspector";
 
 export function Footer() {
 	return (
-		<footer className="footer-distributed">
-			<div className="footer-left">
-				<img
-					style={{
-						width: "10%",
-						height: "20%"
-					}}
-					src="https://seeklogo.com/images/O/organic-food-logo-613EF00A48-seeklogo.com.png"
-				/>
-				<h3>
-					Clean
-					<span>Eating</span>
-				</h3>
-				{/* <p className="footer-links">
-					<a href="#" className="link-1">
-						Home
-					</a>
-					<a href="#">Blog</a>
-					<a href="#">Pricing</a>
-					<a href="#">About</a>
-					<a href="#">Faq</a>
-					<a href="#">Contact</a>
-				</p> */}
-				<p className="footer-company-name">Clean Eating © 2020</p>
-			</div>
-			<div className="footer-center">
-				<div>
-					<i className="fa fa-map-marker" />
-					<p>
-						<span>Miami Beach</span> North Beach, Florida
-					</p>
-				</div>
-				<div>
-					<i className="fa fa-phone" />
-					<p>+1.555.555.5555</p>
-				</div>
-				<div>
-					<i className="fa fa-envelope" />
-					<p>
-						<a href="mailto:support@company.com">support@company.com</a>
-					</p>
-				</div>
-			</div>
-			<div className="footer-right">
-				<p className="footer-company-about">
-					<h5>About the company</h5>
-					Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor
-					lacus vehicula sit amet.
-				</p>
-				<div className="footer-icons">
-					<a href="#">
-						<i className="fab fa-facebook-f" />
-					</a>
-					<a href="#">
-						<i className="fab fa-twitter" />
-					</a>
-					<a href="#">
-						<i className="fab fa-linkedin" />
-					</a>
-					<a href="#">
-						<i className="fab fa-github" />
-					</a>
+		<footer className="container__footer">
+			<div className="container">
+				<div className="row ">
+					<div className="col-md-4 text-center text-md-left ">
+						<div className="py-0">
+							<h3 className="my-4 text-black">
+								Simple
+								<span className="mx-2 font-italic text-success ">Veganista</span>
+							</h3>
+							<p className="footer-links font-weight-bold ">
+								<a className="text-black mr-2" href="./home">
+									Home
+								</a>
+								|
+								<a className="text-black mr-2" href="./recipes">
+									Recipes
+								</a>
+								|
+								<a className="text-black mr-2" href="./books">
+									Books
+								</a>
+								|
+								<a className="text-black" href="mailto:support@email.com">
+									Contact
+								</a>
+							</p>
+							<p className="text-black py-4 mb-4">©2020 Build by WebFluencer</p>
+						</div>
+					</div>
+					<div className="col-md-4 text-black text-center text-md-left ">
+						<div className="py-2 my-4">
+							<div>
+								<p className="text-black">
+									{" "}
+									<i className="fa fa-map-marker mx-2 " />
+									Miami, FL. WebFluencer
+								</p>
+							</div>
+							<div>
+								<p>
+									<i className="fa fa-phone  mx-2 " /> +571 555 55 555
+								</p>
+							</div>
+							<div>
+								<p>
+									<i className="fa fa-envelope  mx-2" />
+									<a style={{ color: "green" }} href="mailto:support@email.com">
+										support@WebFluencer.com
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div className="col-md-4 text-black my-4 text-center text-md-left ">
+						<span className=" font-weight-bold ">About the Company</span>
+						<p className="text-success my-2">
+							We offer custom designs, marketing solutions, web templates and strategies for your small
+							business
+						</p>
+						<div className="py-2">
+							<a href="#">
+								<i className="fab fa-facebook fa-2x text-primary mx-3" />
+							</a>
+							<a href="#">
+								<i className="fab fa-google-plus fa-2x text-danger mx-3" />
+							</a>
+							<a href="#">
+								<i className="fab fa-twitter fa-2x text-info mx-3" />
+							</a>
+							<a href="#">
+								<i className="fab fa-youtube fa-2x text-danger mx-3" />
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</footer>

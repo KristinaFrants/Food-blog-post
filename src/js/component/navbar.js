@@ -1,109 +1,52 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Button, Navbar, Nav, NavItem, NavDropdown, MenuItem } from "react-bootstrap";
 
-let NavStyles = {
-	// color: "white",
-	// url: "https://www.starwars.com/",
-	// urlText: "text",
-	backgroundColor: "rgba(255, 255, 255, 0)",
-	// margin: "20px",
-	height: "160px",
-	color: "black",
-	marginTop: "1%"
-};
-
-let IconStyles = {
-	height: "35px",
-	width: "50px",
-	color: "black",
-	marginTop: "25px"
-};
-
-let LinkStyles = {
-	margin: "2% 2% 2%",
-	// textDecoration: "none",
-	padding: "10px 7px ",
-	// textDecoration: " underline dotted grey",
-	color: "black"
-};
-
-export const Navbar = () => {
-	// 	return (
-	// // 		<nav className="navbar navbar-light bg-light mb-3">
-	// // 			<Link to="/">
-	// // 				<span className="navbar-brand mb-0 h1">React Boilerplate</span>
-	// // 			</Link>
-	// // 			<div className="ml-auto">
-	// // 				<Link to="/demo">
-	// // 					<button className="btn btn-primary">Check the Context in action</button>
-	// // 				</Link>
-	// // 				<Link to="/people">
-	// // 					<button className="btn btn-primary">people</button>
-	// // 				</Link>
-	// // 			</div>
-	// // 		</nav>
-	// // 	);
-	// // };
+export const Header = () => {
 	return (
-		<div className="row" style={NavStyles}>
-			<div className="col-4">
-				<a href="">
-					<i
-						className="fab fa-facebook-square"
-						style={{
-							marginLeft: "8%",
-							height: "35px",
-							width: "50px",
-							color: "black",
-							marginTop: "25px"
-						}}>
-						{" "}
-					</i>
-				</a>
-				<a href="">
-					<i style={IconStyles} className="fab fa-instagram">
-						{" "}
-					</i>
-				</a>
-				<a href="">
-					<i className="fab fa-github-square" style={IconStyles}>
-						{" "}
-					</i>
-				</a>
-				<a href="">
-					<i className="fab fa-twitter-square" style={IconStyles} />
-				</a>
-			</div>
-			<div
-				href="/"
-				style={{
-					background:
-						"url(https://seeklogo.com/images/O/organic-food-logo-613EF00A48-seeklogo.com.png) no-repeat center",
-					backgroundSize: "auto 100%",
-					padding: "0px"
-				}}
-				className="col col1"
-			/>
-			<div className="col col2">
-				<ul className="list-group list-group-horizontal">
-					<Link style={LinkStyles} to="/home">
-						{" "}
-						HOME
-					</Link>
-					<Link style={LinkStyles} to="/recipes">
-						{" "}
-						RECIPES
-					</Link>
-					<Link style={LinkStyles} to="/addRecipe">
-						{" "}
-						ADD RECIPE
-					</Link>
-					<Link style={LinkStyles} to="/books">
-						{" "}
-						BOOKS
-					</Link>
-				</ul>
-			</div>
-		</div>
+		<Navbar className="navbar mb-4" sticky="top" collapseOnSelect expand="lg" variant="dark">
+			<Navbar.Brand style={{ color: "black" }} href="/">
+				Home
+			</Navbar.Brand>
+			<Navbar.Toggle aria-controls="responsive-navbar-nav" />
+			<Navbar.Collapse id="responsive-navbar-nav">
+				<Nav className="mr-auto">
+					<Nav.Link>
+						<Link style={{ color: "black" }} to="/recipes">
+							Recipies
+						</Link>
+					</Nav.Link>
+					<Nav.Link>
+						<Link style={{ color: "black" }} to="/addRecipe">
+							Add Recipe
+						</Link>
+					</Nav.Link>
+					{/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+						<NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+						<NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+						<NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+						<NavDropdown.Divider />
+						<NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+					</NavDropdown> */}
+				</Nav>
+				<Nav>
+					<Nav.Link>
+						<Link style={{ color: "black" }} to="/books">
+							Books
+						</Link>
+					</Nav.Link>
+					{/* <Button variant="outline-dark">Search</Button> */}
+					<a href="">
+						<i className="fab fa-facebook-square p-2 ml-2 mr-2" />
+					</a>
+					<a href="">
+						<i className="fab fa-instagram p-2 ml-2" />
+					</a>
+					<a href="">
+						<i className="fab fa-twitter-square p-2 ml-2" />
+					</a>
+				</Nav>
+			</Navbar.Collapse>
+		</Navbar>
 	);
 };

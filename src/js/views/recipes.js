@@ -1,7 +1,8 @@
 import React, { useContext, useState } from "react";
 import { Context } from "../store/appContext";
-import { Card } from "./card.js";
-import { RecipeShow } from "./recipe-show";
+import { CardRecipe } from "./card.js";
+import "./card.css";
+import { RecipeContent } from "./showSelectedRecipe";
 
 export const Recipes = props => {
 	const { store, actions } = useContext(Context);
@@ -12,44 +13,47 @@ export const Recipes = props => {
 	};
 	// console.log(store.planets);
 	return (
-		<div className="  w-100 mx-auto" style={{}}>
-			<div
-				className="jumbotron mb-2"
-				style={{
-					backgroundImage:
-						"url(https://images.pexels.com/photos/4051498/pexels-photo-4051498.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)",
-					marginTop: "3%"
-				}}>
-				<h1 className="display-4" style={{ color: "black" }}>
-					DISCOVER OUR RECIPES
-				</h1>
-				{/* <p className="lead" style={{ color: "white" }}/> */}
-				{/* <a className="btn btn-dark btn-lg" href="" role="button">
-					Explore
-				</a> */}
-			</div>
+		<div className="  w-100 mx-auto">
 			<div>
-				<hr style={{ marginTop: "3%", border: "1px solid rgb(39, 39, 39)" }} />
-				<h3 style={{ color: "grey", marginLeft: "1%", fontFamily: "Candal" }}>Recipes//</h3>
-				<hr style={{ border: "1px solid rgb(39, 39, 39" }} />
+				<i>
+					<h1
+						className="mt-4"
+						style={{
+							textAlign: "center",
+							marginBottom: "3%",
+							fontSize: "80px",
+							border: "1px solid rgb(179, 180, 179)",
+							marginRight: "3%",
+							marginLeft: "3%",
+							padding: "3%"
+						}}>
+						Discover Our Recipes
+					</h1>
+				</i>
+				<hr />
 			</div>
+
 			<div className="row">
-				{!store.recipes
-					? "loading"
-					: store.recipes.map((recipe, index) => (
-							<Card
-								key={index}
-								ind={index}
-								image={recipe.image}
-								// {store.peopleImages[index].urlImg}
-								name={recipe.name}
-								servings={recipe.servings}
-								description={recipe.description}
-								cooktime={recipe.cooktime}
-								cooktips={recipe.cooktips}
-							/>
-					  ))}
+				<div className="card__recipes col">
+					{!store.recipes
+						? "loading"
+						: store.recipes.map((recipe, index) => (
+								<CardRecipe
+									key={index}
+									ind={index}
+									id={recipe.id}
+									image={recipe.image}
+									// {store.peopleImages[index].urlImg}
+									name={recipe.name}
+									servings={recipe.servings}
+									description={recipe.description}
+									cooktime={recipe.cooktime}
+									cooktips={recipe.cooktips}
+								/>
+						  ))}
+				</div>
 			</div>
+			<RecipeContent />
 		</div>
 	);
 };

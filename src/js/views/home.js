@@ -12,22 +12,7 @@ export const Home = props => {
 			<div className="block w-100">
 				<Carousely />
 			</div>
-			<div className=" row w-100 mb-5" style={{ backgroundImage: "url()" }}>
-				{/* {!store.recipes
-					? "loading"
-					: store.recipes.map((recipe, index) => (
-							<Card
-								key={index}
-								ind={index}
-								image={recipe.thumbnail_url}
-								// {store.peopleImages[index].urlImg}
-								name={recipe.slug}
-								hair={recipe.description}
-								gender={recipe.brand}
-								skin={recipe.promotion}
-							/>
-					  ))} */}
-			</div>
+			<div className=" row w-100 mb-5" style={{ backgroundImage: "url()" }} />
 		</div>
 	);
 };

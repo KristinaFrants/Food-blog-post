@@ -4,10 +4,9 @@ import ScrollToTop from "./component/scrollToTop";
 
 import { Card } from "./views/card";
 import { Books } from "./views/books";
-import { Single } from "./views/single";
 import injectContext from "./store/appContext";
 
-import { Navbar } from "./component/navbar";
+import { Header } from "./component/navbar";
 import { Footer } from "./component/footer";
 import { Home } from "./views/home";
 import { Recipes } from "./views/recipes";
@@ -26,10 +25,10 @@ export const Layout = () => {
 		<div className="d-flex flex-column h-100">
 			<BrowserRouter>
 				<ScrollToTop>
-					<Navbar />
+					<Header />
 					<Switch>
 						{/* <Route exact path="/" component={Card} /> */}
-						<Route path="/homeBlog" component={HomeBlog} />
+						{/* <Route path="/homeBlog" component={HomeBlog} /> */}
 						<Route path="/home" component={Home} />
 						<Route exact path="/" component={Home} />
 						<Route path="/books" component={Books} />
@@ -37,7 +36,6 @@ export const Layout = () => {
 						<Route path="/addRecipe" component={AddRecipe} />
 						<Route path="/dragnDrop" component={DraggableList} />
 						<Route path="/recipes" component={Recipes} />
-						<Route path="/single/:theid" component={Single} />
 						<Route render={() => <h1>Not found!</h1>} />
 					</Switch>
 					<Footer />

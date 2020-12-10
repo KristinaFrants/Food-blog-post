@@ -3,40 +3,15 @@ import { Context } from "../store/appContext";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import PropTypes from "prop-types";
+import "./addRecipe.css";
 import { DraggableList } from "./dragnDrop";
 
-let FormStyles = {
-	// height: "80%",
-	boxShadow: " 0px 10px 30px -5px grey",
-	// width: "50%",
-	// float: "left",
-	marginRight: "2%",
-	marginLeft: "6%",
-	marginBottom: "2%",
-	marginTop: "2%",
-	fontFamily: "Sofia"
-};
-
-let ImgStiles = {
-	width: "90%",
-	// float: "right",
-	backgroundRepeat: "no-repeat",
-	marginRight: "2%",
-	marginTop: "5%",
-	marginBottom: "2%",
-	boxShadow: " 0px 10px 30px -5px grey"
-};
-
-// let InputStyles = {
-// 	borderStyle: "2px solid white",
-// 	marginLeft: "4%",
-// 	width: "80%"
-// };
 export const AddRecipe = props => {
 	const { store, actions } = useContext(Context);
 	const [image, setImage] = useState("");
 	const [loading, setLoading] = useState(false);
 	const [allinObject, setAllinObject] = useState({
+		id: "",
 		name: "",
 		description: "",
 		servings: "",
@@ -48,7 +23,9 @@ export const AddRecipe = props => {
 		cooktips: ""
 		// person_id: store.contacts.id
 	});
-	console.log("props", props.history);
+
+	// console.log("props", props.history);
+
 	const uploadImage = async e => {
 		const files = e.target.files;
 		const data = new FormData();
@@ -65,187 +42,130 @@ export const AddRecipe = props => {
 
 		setLoading(false);
 	};
-	console.log("image", image);
-	return (
-		<div className="row">
-			<div className="col" style={FormStyles}>
-				<h2
-					style={{
-						marginLeft: "4%",
-						marginTop: "8%"
-					}}>
-					ADD YOUR RECIPE
-				</h2>
-				<div className="text-center mt-5">
-					<div className="row">
-						<div className="col-md-6">
-							<form method="post" action="#" id="#">
-								<div className="form-group files color">
-									<p className="float">Recipe Photo</p>
-									<label
-										style={{
-											padding: "6px 6px",
-											background: "white",
-											boxShadow: "4px 4px 4px 2px grey",
-											width: "50%",
-											height: "150px"
-										}}>
-										<input
-											type="file"
-											name="file"
-											style={{ display: "none", overflow: "hidden" }}
-											// placeholder="Upload an image"
-											onChange={uploadImage}
-										/>
-										{loading ? (
-											<h3>Loading...</h3>
-										) : (
-											<img
-												src={image}
-												style={{
-													width: "100px",
-													height: "100%"
-												}}
-											/>
-										)}
-									</label>{" "}
-								</div>
-							</form>
-						</div>
-						<Form className="col-6">
-							<Form.Group
-								style={{ marginRight: "10%", float: "right", width: "95%" }}
-								controlId="exampleForm.ControlTextarea1">
-								<Form.Label>Description</Form.Label>
-								<Form.Control
-									as="textarea"
-									rows="6"
-									onChange={e => setAllinObject({ ...allinObject, description: e.target.value })}
-									value={allinObject.description}
-								/>
-							</Form.Group>
-						</Form>
 
-						{/* <i style={PawStyle} className="fas fa-paw col-6  pl-5 pt-3" /> */}
+	// console.log("image", image);
+
+	return (
+		<div className="addRecipe__container row">
+			<div className="addRecipe__column__container col">
+				<h2 className="mt-4 ">ADD RECIPE</h2> <hr />
+				<div className="row mb-2">
+					<div className="col addRecipe__addImage">
+						<form method="post" action="#" id="#">
+							<label className="addRecipe__label">
+								<input className="addRecipe__input" type="file" name="file" onChange={uploadImage} />
+								{loading ? <h3>Loading...</h3> : <img className="addRecipe__image" src={image} />}
+							</label>
+						</form>
+						<small className="text-muted ml-3 ">Add Recipe Photo</small>
 					</div>
-					<div className="row">
-						<Form style={{ marginLeft: "4%", width: "42%" }}>
-							<Form.Group controlId="formGroupServings">
-								<Form.Label>servings</Form.Label>
-								<Form.Control
-									type="servings"
-									placeholder="servings"
-									onChange={e => setAllinObject({ ...allinObject, servings: e.target.value })}
-									value={allinObject.servings}
-								/>
-							</Form.Group>
-						</Form>
-						<Form.Group
-							style={{ float: "right", marginRight: "3%", width: "42%" }}
-							className="col"
-							controlId="formGroupCooktime">
-							<Form.Label>cooktime</Form.Label>
+
+					<Form className="col-7">
+						<Form.Group className="addRecipe__description mr-4">
 							<Form.Control
-								type="cooktime"
-								placeholder="Type of cooktime?"
-								onChange={e => setAllinObject({ ...allinObject, cooktime: e.target.value })}
-								value={allinObject.cooktime}
+								as="textarea"
+								controlId="exampleForm.ControlTextarea1"
+								rows="7"
+								onChange={e => setAllinObject({ ...allinObject, description: e.target.value })}
+								value={allinObject.description}
 							/>
+							<small className="text-muted ml-1">Add Description</small>
 						</Form.Group>
-					</div>
-					<div className="col">
-						<Form>
-							<Form.Group style={{ marginLeft: "" }} controlId="formGroupAuthor">
-								<Form.Label>Author</Form.Label>
-								<Form.Control
-									type="author"
-									placeholder="author"
-									onChange={e => setAllinObject({ ...allinObject, author: e.target.value })}
-									value={allinObject.author}
-								/>
-							</Form.Group>
-						</Form>
-						{/* <Form className="col-md-6" /> */}
-					</div>
-					<Form className="col">
-						<Form.Group style={{ marginRight: "" }} className="recipe" controlId="formGroupBreed">
-							<Form.Label>Recipe Name</Form.Label>
+					</Form>
+				</div>
+				<div className="row mx-auto">
+					<Form className="col ">
+						<Form.Group className="recipe__name mr-1" controlId="formGroupBreed">
 							<Form.Control
 								type="name"
-								placeholder="Input name"
+								placeholder="Recipe Name"
 								onChange={e => setAllinObject({ ...allinObject, name: e.target.value })}
 								value={allinObject.name}
 							/>
+							<small className="text-muted ml-1 ">Recipe Name</small>
 						</Form.Group>
 					</Form>
-					<Form className="row">
-						<Form.Group
-							style={{ marginLeft: "4%", marginRight: "-2%", width: "50%" }}
-							controlId="formGroupGender">
-							<Form.Label>ingridients</Form.Label>
-							<Form.Control
-								type="ingridients"
-								as="textarea"
-								rows="6"
-								placeholder="ingridients "
-								onChange={e => setAllinObject({ ...allinObject, ingridients: e.target.value })}
-								value={allinObject.ingridients}
-							/>
-						</Form.Group>
-						<Form.Group
-							style={{ marginLeft: "4%", marginRight: "2%" }}
-							className="col"
-							controlId="formGroupCooktips">
-							<Form.Label>Cooktips</Form.Label>
-							<Form.Control
-								type="cooktips"
-								as="textarea"
-								rows="6"
-								placeholder="cooktips"
-								onChange={e => setAllinObject({ ...allinObject, cooktips: e.target.value })}
-								value={allinObject.cooktips}
-							/>
-						</Form.Group>
-					</Form>
-					<Form className="row">
-						<Form.Group
-							style={{ marginLeft: "2%", marginRight: "2%" }}
-							className="col"
-							controlId="formGroupEmail">
-							<Form.Label>Email</Form.Label>
-							<Form.Control
-								type="email"
-								placeholder="email"
-								onChange={e => setAllinObject({ ...allinObject, email: e.target.value })}
-								value={allinObject.email}
-							/>
-						</Form.Group>
-					</Form>
-					<Button
-						id="btnLogin"
-						className="btn btn-dark"
-						style={{
-							marginBottom: "4%",
-							marginTop: "8%",
-							width: "30%",
-
-							padding: "10px",
-							boxShadow: "4px 4px grey",
-							fontFamily: "Playfair Display, serif"
-						}}
-						onClick={() => actions.recipePost(allinObject, props.history)}>
-						{" "}
-						Submit
-					</Button>
 				</div>
+				<div className="row mx-auto">
+					<Form className="addResipe__servings col ">
+						<Form.Group controlId="formGroupServings">
+							<Form.Control
+								type="servings"
+								placeholder="Servings"
+								onChange={e => setAllinObject({ ...allinObject, servings: e.target.value })}
+								value={allinObject.servings}
+							/>
+							<small className="text-muted ml-1">Servings</small>
+						</Form.Group>
+					</Form>
+					<Form.Group className="addResipe__cooktime col mr-1" controlId="formGroupCooktime">
+						<Form.Control
+							type="cooktime"
+							placeholder="hr/min"
+							onChange={e => setAllinObject({ ...allinObject, cooktime: e.target.value })}
+							value={allinObject.cooktime}
+						/>
+						<small className="text-muted ml-1">Cooking time</small>
+					</Form.Group>
+				</div>
+				<Form className="addRecipe__ingridiens row mx-auto">
+					<Form.Group className="col" controlId="formGroupGender">
+						<Form.Control
+							type="ingridients"
+							as="textarea"
+							rows="7"
+							onChange={e => setAllinObject({ ...allinObject, ingridients: e.target.value })}
+							value={allinObject.ingridients}
+						/>
+						<small className="text-muted ml-1">Ingridients</small>
+					</Form.Group>
+					<Form.Group className="col mr-1" controlId="formGroupCooktips">
+						<Form.Control
+							type="cooktips"
+							as="textarea"
+							rows="7"
+							onChange={e => setAllinObject({ ...allinObject, cooktips: e.target.value })}
+							value={allinObject.cooktips}
+						/>
+						<small className="text-muted ml-1">Cooking tips</small>
+					</Form.Group>
+				</Form>
+				<div className="row addRecipe__author__name mx-auto">
+					<Form className="col mr-1">
+						<Form.Group controlId="formGroupAuthor">
+							<Form.Control
+								type="author"
+								placeholder="Author"
+								onChange={e => setAllinObject({ ...allinObject, author: e.target.value })}
+								value={allinObject.author}
+							/>
+							<small className="text-muted ml-1">Author Name</small>
+						</Form.Group>
+					</Form>
+				</div>
+				<Form className="row mx-auto">
+					<Form.Group className="col mr-1" controlId="formGroupEmail">
+						<Form.Control
+							type="email"
+							placeholder="Email"
+							onChange={e => setAllinObject({ ...allinObject, email: e.target.value })}
+							value={allinObject.email}
+						/>
+						<small className="text-muted ml-1">Enter Your Email</small>
+					</Form.Group>
+				</Form>
+				<Button
+					className=" addRecipe__button btn btn-dark"
+					size="lg"
+					block
+					onClick={() => actions.recipePost(allinObject, props.history)}>
+					{" "}
+					Submit
+				</Button>
 			</div>
 
-			<div className="col section">
+			<div className="dragndrop__component col section mx-auto">
 				<DraggableList />
-				{/* <img
-					src="https://images.pexels.com/photos/949067/pexels-photo-949067.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-					style={ImgStiles}
-				/> */}
 			</div>
 		</div>
 	);

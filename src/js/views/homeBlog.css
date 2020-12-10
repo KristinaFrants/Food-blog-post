@@ -1,0 +1,30 @@
+.homeBlog__cards{
+    padding: 2%;
+}
+
+.homeBlog__cards:hover {
+    transform: scale(1.2);
+}
+
+.blockquote>p{
+    border: 1px solid rgb(175, 175, 175);
+    padding: 2%;
+}
+
+.homeBlog__img{
+    padding-right: 1%;
+}
+
+.homeBlog{
+    font-family: 'Castoro', serif;
+    
+    align-items: center;
+}
+
+.homeBlog__header{
+    text-align: center !important;
+    border: 1px solid rgb(179, 180, 179);
+    margin-bottom: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+}

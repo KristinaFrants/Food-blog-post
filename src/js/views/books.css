@@ -1,0 +1,35 @@
+.books__header{
+        text-align: center;
+        margin-bottom: 5%;
+        font-size: 60px;
+        border: 1px solid rgb(179, 180, 179);
+        margin-right: 3%;
+        margin-left: 3%;
+        padding: 3%;
+}
+
+.books__left{
+    border: 1px solid rgb(179, 180, 179);
+    margin-left: 4%;
+    margin-bottom: 4%;
+
+}
+
+
+.books__leftButton{
+    margin-left: 3%;
+   border-radius: 12%;
+   margin-bottom: 2%;
+   margin-top: 4%;
+
+}
+
+.books__content{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.books__kindle{
+    color:red
+}
+

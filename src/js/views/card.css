@@ -1,0 +1,32 @@
+.card__recipes{
+    display: flex;
+    width: "15rem"
+}
+
+@media screen and (max-width: 600px){
+    .card__recipes{
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+    }
+}
+
+.card_recipes__container{
+    padding: 2%;
+    margin: 2%;
+}
+
+.card_recipes__image:hover{
+    transform: scale(1.2);
+}
+
+#recipeButton{
+    padding: 2%;
+}
+
+.recipe__modal__cooktips{
+    text-align: center;
+    margin-bottom: 3%;
+    border: 1px solid rgb(179, 180, 179);
+    padding: 3%;
+}

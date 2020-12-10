@@ -1,0 +1,158 @@
+.container__carousel{
+width: 80%;
+height: 100%;
+padding: 2%;
+
+}
+@media screen and (max-width: 600px){
+    .carousell__left{
+        display: none;
+    }
+    .divider__carousel{
+        display: none !important;
+    }
+    .carousell__right{
+      width: 100% !important;
+}
+}
+
+
+
+.carousell__right{
+      width: 68%;
+      padding-right: 2%;
+}
+
+
+
+.carousell__right > img{
+width: 70%;
+height: 50%;
+margin-top: 5% !important;
+padding: 4%;
+border: 1px solid rgb(179, 180, 179);
+display: flex;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 3%;
+
+}
+
+.carousell__right > p{
+    text-align: left;
+    font-style: oblique;
+}
+
+.carousell__left > p{
+    text-align: left;
+    font-style: oblique;
+    padding: 1%;
+}
+
+.carousell__right > h4{
+    text-align: center;
+    margin-bottom: 1%;
+    margin-top: 11px;
+}
+
+.divider__carousel{
+    border-left: 1px solid rgb(179, 180, 179);
+    height: 880px;
+    display: flex;
+}
+
+.carousell__left>img{
+    width: 80%;
+    height: 29%;
+    padding: 4%;
+    border: 1px solid rgb(179, 180, 179);
+    display: flex;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.carousell__left>h6{
+    text-align: center;
+    /* margin-top:1%; */
+    font-size: 17px;
+}
+
+.carousell__left>h5{
+    text-align: center;
+    margin-bottom: 3%;
+    font-family: inherit;
+}
+
+.carousel__books{
+    height: 5%;
+    width: 40%;
+    background-color: rgb(247, 247, 40);
+    border: 5px dotted #bbb;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 8%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    
+}
+
+
+.carousel__home {
+    /* margin: 0%; */
+    font-family: 'Castoro', serif;
+    margin-top: 8%;
+}
+
+.fa-seedling, .fa-instagram, .fa-twitter-square, .fa-facebook-square, .fa-utensils, .fa-apple-alt{
+    color: black;
+    padding: 3%;
+    font-size: 25px;
+
+}
+
+.carousel__icons{
+    text-align: center;
+}
+
+.youtube__videos{
+margin-bottom: 5%;
+}
+
+.carousel__youtube__header{    
+    text-align: center !important;
+    border: 1px solid rgb(179, 180, 179);
+    margin-bottom: 2%;
+    margin-left: 4%;
+    margin-right: 3%;
+}
+
+.carousel__foter{
+    padding: 3%;
+    margin-left: 4%;
+    margin-right: 4%;
+    background-color: #f1f2f6;
+    background-image: linear-gradient(315deg, #f1f2f6 0%, #c9c6c6 74%);
+    
+}
+
+.carousel__foter__header {
+    text-align: center !important;
+    margin-left: 4%;
+    margin-bottom: 2%;
+   
+
+
+}
+
+.carousel__foter__link{
+    text-align: center !important;
+    font-size: 20px;
+    margin-top: 2%;
+
+}
+
+
+

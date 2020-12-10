@@ -1,0 +1,29 @@
+.homeMore__container{
+    border: 1px solid rgb(179, 180, 179);
+    margin-top: 5%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 5%;
+
+
+}
+
+.homeMore__img{
+    width: 45%;
+    padding: 4%;
+}
+
+.homeMore__header{
+    text-align: center !important;
+    margin-top: 5%;
+}
+
+.homeMore__paragraph{
+    text-align: center !important;
+    margin-top: 3%;
+}
+
+.homeMore__link{
+    text-align: center !important;
+  
+}

@@ -2,14 +2,12 @@ import React, { useContext, useState } from "react";
 import "../../styles/home.scss";
 import PropTypes from "prop-types";
 import { Context } from "../store/appContext";
+import Card from "react-bootstrap/Card";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Container from "react-bootstrap/Container";
 
-export const Card = props => {
+export const CardRecipe = props => {
 	const [show, setShow] = useState(false);
 
 	const handleClose = () => setShow(false);
@@ -17,130 +15,95 @@ export const Card = props => {
 
 	const { actions, store } = useContext(Context);
 	const [selected, setSelected] = useState(false);
-	const handleClick = e => {
-		setSelected(!selected);
-		actions.toggleFavorite(props.ind);
-	};
 
-	console.log(store.favorites);
-
+	// return (
+	// 	<div>
+	// 		{store.recipes.map((item, index) => {
 	return (
-		<div className=" text-center mt-5 mb-4 ml-4">
-			<div
-				className="card "
-				style={{
-					// width: "16rem",
-					backgroundColor: "",
-					color: "black",
-					fontFamily: "Sofia"
-				}}>
-				<img
-					style={{
-						borderBottomStyle: "solid",
-						width: "300px",
-						height: "200px",
-						padding: "7px",
-						boxSizing: "border-box",
-						margin: "1% 1% 3% %"
-					}}
-					className="image"
-					src={props.image}
-					alt="img"
-					width="100%"
-				/>
-				{/* <img src="" className="card-img-top" alt="..." /> */}
-				<Link to="/recipe-show">Recipe</Link>
-				<Button
-					id="recipeButton"
-					style={{ width: "50%", margin: "4% 0% 0% 2%" }}
-					variant="white"
-					onClick={handleShow}>
+		<Card
+			// key={index}
+			// style={{ width: "15rem" }}
+			className="card_recipes__container">
+			<Card.Img variant="top" src={props.image} className="card_recipes__image" />
+			<hr />
+			<Card.Body>
+				<Card.Title>{props.name}</Card.Title>
+				<Card.Text>
+					<strong> Preparation time: </strong> {props.cooktime}
+					<br />
+					<strong> Servings: </strong> {props.servings}
+					<br />
+				</Card.Text>
+			</Card.Body>
+			<Card.Footer>
+				<Button id="recipeButton" variant="outline-dark" size="lg" block onClick={handleShow}>
 					Show Recipe
 				</Button>
-				<Modal
-					{...props}
-					size="lg"
-					aria-labelledby="contained-modal-title-vcenter"
-					centered
-					show={show}
-					onHide={handleClose}>
-					<Modal.Header closeButton>
-						<Modal.Title>{props.name}</Modal.Title>
-					</Modal.Header>
-					<Modal.Body>
-						{/* <div className="row">
-							<div className="col-6">
-								{props.description}
-								<br />
-							</div>
-							<div className="col-6">{props.cooktips}</div>
-                        </div> */}
+			</Card.Footer>
 
-						<Container>
-							<Row className="show-grid">
-								<Col xs={12} md={8}>
-									<p3>{props.cooktips} </p3>
-								</Col>
-								<Col xs={6} md={4}>
-									<p3>{props.cooktime} </p3>
-									{/* <img>
-										src=
-										{props.image}
-									</img> */}
-								</Col>
-							</Row>
+			<Modal
+				{...props}
+				size="lg"
+				aria-labelledby="contained-modal-title-vcenter"
+				centered
+				show={show}
+				onHide={handleClose}>
+				<Modal.Header closeButton>
+					<Modal.Title className="modal__title bg-light">{props.name}</Modal.Title>
+				</Modal.Header>
 
-							<Row className="show-grid">
-								<Col xs={6} md={4}>
-									<code>{props.description}</code>
-								</Col>
-								<Col xs={6} md={4}>
-									<code>.col-xs-6 .col-md-4</code>
-								</Col>
-								<Col xs={6} md={4}>
-									<code>.col-xs-6 .col-md-4</code>
-								</Col>
-							</Row>
-						</Container>
-					</Modal.Body>
-					<Modal.Footer>
-						<Button variant="secondary" onClick={handleClose}>
-							Close
-						</Button>
-					</Modal.Footer>
-				</Modal>
+				<Modal.Body>
+					<div className="recipe__modal__preparation mb-4">
+						<h6>
+							<i>Preparation Time: {props.cooktime}</i>
+						</h6>
+					</div>
+					<div className="recipe__modal__cooktips">
+						<h1>
+							<i>Cooktips</i>
+						</h1>
+						<hr />
+						{props.cooktips}
+					</div>
 
-				<div
-					style={{
-						width: "300px",
-						height: "200px"
-					}}
-					className="card-body">
-					<h5 style={{ textAlign: "left" }} className="card-title">
-						{props.name}{" "}
-					</h5>
-					<p style={{ textAlign: "left" }} className="card-text">
-						&nbsp; <strong> Preparation time: </strong> {props.cooktime} minutes
+					<div className=" recipe__modal__cooktips">
+						<h1>
+							<i>Description</i>
+						</h1>
+						<hr />
 						<br />
-						&nbsp;
-						<strong> Servings: </strong> {props.servings}
+						{props.description}
 						<br />
-						{/* &nbsp; <strong> Cook Tips: </strong> {props.cooktips} */}
-						<br />
-					</p>{" "}
-				</div>
-			</div>
-		</div>
+					</div>
+					<h6>
+						<i>Author: Eva Atkins</i>
+					</h6>
+					<div />
+				</Modal.Body>
+				<Modal.Footer>
+					<Button variant="secondary" onClick={handleClose}>
+						Close
+					</Button>
+				</Modal.Footer>
+			</Modal>
+		</Card>
 	);
+
+	// 		})}
+	// 	</div>
+	// );
 };
-Card.propTypes = {
+
+CardRecipe.propTypes = {
 	ind: PropTypes.number,
+	id: PropTypes.number,
 	servings: PropTypes.string,
 	description: PropTypes.string,
 	name: PropTypes.string,
 	cooktime: PropTypes.string,
 	data: PropTypes.object,
 	image: PropTypes.string,
-	cooktips: PropTypes.string
+	cooktips: PropTypes.string,
+	author: PropTypes.string
 	// birth_year: PropTypes.string
 };
