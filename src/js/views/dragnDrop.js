@@ -25,7 +25,7 @@ export const DraggableList = () => {
 				style={{ width: "96%", paddingTop: "12%" }}
 				src="https://image.freepik.com/free-photo/delicious-homemade-mushroom-cream-soup-top-view_114579-8427.jpg"
 			/>
-			<hr className="mr-3" />
+			<hr className="mr-3 ml-3" />
 			<i>
 				<p>
 					Become a part of our Blog. If the cooking is your passion you can be one of our authors. Add your
