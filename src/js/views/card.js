@@ -98,6 +98,7 @@ CardRecipe.propTypes = {
 	ind: PropTypes.number,
 	id: PropTypes.number,
 	servings: PropTypes.string,
+	ingridients: PropTypes.string,
 	description: PropTypes.string,
 	name: PropTypes.string,
 	cooktime: PropTypes.string,

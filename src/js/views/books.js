@@ -21,6 +21,7 @@ export const Books = props => {
 	function changePage(offset) {
 		setPageNumber(prevPageNumber => prevPageNumber + offset);
 	}
+
 	function changePage1(offset) {
 		setPageNumberr(prevPageNumber => prevPageNumber + offset);
 	}
